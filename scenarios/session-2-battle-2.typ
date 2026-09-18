@@ -21,8 +21,14 @@
   ],
 )
 
-#armies(draft: true)[
+#armies[
   *1,500 points* per side: The Empire against Greenskins.
+
+  Campaign list rules apply:
+  - "Heroes" only
+  - Up to 15% rare
+  - Hero budget: 350 points
+  - One magic item worth a maximum of 25 points
 
   The Greenskins may only field the following unit types:
   - Cavalry
@@ -38,7 +44,7 @@
   and at least two characters.
 ]
 
-#battlefield(draft: true)[
+#battlefield[
   The open steppe of the Dark Lands: hills, cliffs and some sparse forest. The
   table is 6 by 4 feet.
 
@@ -54,7 +60,7 @@
   )
 ]
 
-#deployment(draft: true)[
+#deployment[
   The Empire deploys their entire army in the 12" wide strip across the centre
   of the table, 30" from either short table edge. All units must face the same
   long table edge.
@@ -70,16 +76,16 @@
   General for all purposes. The two tribes treat each other as Desperate Allies.
 ]
 
-#first-turn(draft: true)[
+#first-turn[
   The Empire takes the first turn.
 ]
 
-#game-length(draft: true)[
+#game-length[
   The game lasts six turns, or ends sooner if one army has been completely
   wiped out.
 ]
 
-#special-rules(draft: true)[
+#special-rules[
   #special-rule[Between Two Hammers][
     Instead of deploying normally, the Greenskins arrive from the two short
     table edges at the beginning of turn 1, each tribe from its own edge,
@@ -102,7 +108,7 @@
   ]
 ]
 
-#aftermath(draft: true)[
+#aftermath[
   #special-rule[Abandoned Ruins][
     The small ruin holds something valuable, though claiming it may mean
     breaking rank. If an Empire unit reaches base contact with the ruin at any
