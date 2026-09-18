@@ -69,7 +69,7 @@
   #special-rule[Placing the Beasts][
     The *Great Sacred Beast* is placed at the centre of the table.
 
-    The two *Lesser Sacred Beasts* are placed on the centre line, 18" to
+    The two *Lesser Sacred Beasts* are placed on the centre line, 12" to
     either side of the Great Beast, so that no single Lizardmen thrust can
     reach all three.
 
