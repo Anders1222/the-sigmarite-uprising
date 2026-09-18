@@ -7,6 +7,7 @@
     ([The Empire],),
     ([Greenskins],),
   ),
+  art: "art/session-2-battle-2.png",
   intro: [
     Having escaped the halls of the undead, we now find ourselves in the
     desolate Dark Lands. Exhausted, we traverse the steppes in search of
