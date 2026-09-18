@@ -57,6 +57,40 @@
   but critically _one_ outrider survives. The screaming skull catapult sends
   a shot into the greatswords, killing many. They hold, however.
 
+  #photo("/reports/photos/session-1-battle-2-turn-2.jpg", height: 10cm)[
+    The end of the Tomb Kings' second turn.
+  ]
+
+  #turn(2, side: [The Empire])
+  The Empire marches on. Reaching the far board edge before the shadows
+  catch them is critical.
+
+  In the magic phase Emmerich again uses his quick wit and casts _Silver
+  Arrows of Arha_ on the lone liche priest. The winds of magic favour
+  Emmerich, and the liche priest is slain on the spot! Although the Tomb
+  Kings manage to resist the crumbling, it pushes the battle strongly in the
+  Sigmarites' favour.
+
+  #turn(2, side: [Tomb Kings])
+  Already on the back foot, the Tomb Kings push their chariots into a prime
+  flanking position. The skeleton warriors also move up, ready to flank
+  charge next turn. Then they unleash their secret weapon: two tomb
+  scorpions. The first erupts from its resting place behind the greatswords.
+  The second, however, fails to show up.
+
+  In the shooting phase the catapult and the archers kill even more of the
+  greatswords.
+
+  #photo("/reports/photos/session-1-battle-2-turn-3.jpg", height: 10cm)[
+    Midway through the Tomb Kings' third turn, as they move.
+  ]
+
+  #turn(3, side: [The Empire])
+  _To be written._
+
+  #turn(3, side: [Tomb Kings])
+  _To be written._
+
   #turning-point[
     _The single decision, charge or dice roll that decided it._
   ]
