@@ -54,7 +54,13 @@
   [Bruno "Chainbreaker" Steinhauer],
   unit-type: [Captain],
   profile: (4, 5, 5, 4, 4, 2, 5, 3, 8),
-  equipment: ([Hand weapon], [Heavy armour], [Shield]),
+  equipment: (
+    [Hand weapon], [Heavy armour], [Shield],
+    magic-item([Orb of Ptra], kind: [Enchanted item])[
+      All missile attacks targeting the bearer of this item or any unit
+      they are with suffer -1 To Hit.
+    ],
+  ),
   special-rules: ([Hold the Line], [Battle Standard Bearer]),
 )
 
