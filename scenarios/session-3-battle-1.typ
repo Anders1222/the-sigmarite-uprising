@@ -87,13 +87,19 @@
 ]
 
 #battlefield(draft: true)[
-  The table is 6 by 4 feet, 72" by 48".
+  The table is 6 by 4 feet, 72" by 48". The Dwarfs have one short edge, the
+  Chaos Dwarfs the other.
 
-  A prominent piece of terrain near the centre of the battlefield represents
-  the Ogre camp.
+  A prominent piece of terrain represents the Ogre camp. Its centre sits on
+  the table's centre line, 24" from the Chaos Dwarf table edge, and is marked
+  so that distances can be measured from it.
 
-  The rest of the table should carry rocky hills, scrub, ruins or similar
-  terrain, able to conceal the approaching ambushers.
+  The rest of the terrain is laid out as shown on the map, each piece placed
+  by its centre. The pieces themselves are whatever the collection holds:
+  rocky outcrops screen the flank windows from the Dwarf lines, a rock spur
+  and ruins cover the Chaos Dwarf edge, the Dwarfs get a hill for their war
+  machines, and scrub gives soft cover on the walk in. The lanes from every
+  entry point to the camp stay clear of anything that slows movement.
 
   #block(
     width: 100%,
