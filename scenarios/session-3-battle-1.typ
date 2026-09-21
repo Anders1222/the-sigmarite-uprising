@@ -24,7 +24,7 @@
   ],
 )
 
-#armies(draft: true)[
+#armies[
   *1,500 points* per side: Chaos Dwarfs with Ogre allies against Dwarfs.
 
   Campaign list rules apply:
@@ -83,11 +83,6 @@
 
     *Special rules:* Natural Armour (6+), Ogre Charge.
 
-  ]
-
-  #to-be-decided[
-    How the Ogre contingent is taken: an allied contingent, or a single mixed
-    list.
   ]
 ]
 
