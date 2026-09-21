@@ -117,21 +117,22 @@
   rect(width: w * u, height: h * u, fill: ruin,
     stroke: (paint: rock-dark, thickness: 0.8pt, dash: (array: (3pt, 2pt)))),
 )
-// Terrain labels: the name and footprint, then the gap between the piece and
-// the nearest short edge and the nearest long edge, so it can be placed by
-// measuring from the table edges.
+// Terrain labels: the name, then where the piece's centre sits, measured
+// from the nearest short edge and the nearest long edge. The footprints
+// drawn are only indicative: the pieces are whatever the collection holds.
 #let terrain(kind, cx, cy, w, h, body, label-above: false, on-dark: false) = {
   kind(cx, cy, w, h)
-  let short = if cx < 36 { [#(cx - w / 2)″ from the Dwarf edge] } else {
-    [#(72 - cx - w / 2)″ from the Chaos Dwarf edge] }
-  let long = if cy < 24 { [#(cy - h / 2)″ from the Right Flank edge] } else {
-    [#(48 - cy - h / 2)″ from the Left Flank edge] }
+  place(dx: px(cx) - 0.35 * u, dy: py(cy) - 0.35 * u,
+    circle(radius: 0.35 * u, fill: gold, stroke: 0.4pt + iron))
+  let short = if cx < 36 { [#cx″ from the Dwarf edge] } else {
+    [#(72 - cx)″ from the Chaos Dwarf edge] }
+  let long = if cy < 24 { [#cy″ from the Right Flank edge] } else {
+    [#(48 - cy)″ from the Left Flank edge] }
   at-centre(cx, if label-above { cy - h / 2 - 4.2 } else { cy + h / 2 + 0.4 }, {
-    text(size: 6.8pt, fill: if on-dark { parchment } else { ink },
-      [#body · #w″ × #h″])
+    text(size: 6.8pt, fill: if on-dark { parchment } else { ink }, body)
     linebreak()
     text(size: 6.3pt, fill: if on-dark { parchment-dark } else { gold },
-      [#short #linebreak() #long])
+      [centre #short #linebreak() and #long])
   }, w: 16)
 }
 
@@ -146,7 +147,7 @@
 )))
 #place(dy: 1.78cm, box(width: 100%, align(center,
   text(size: 7pt, fill: gold, tracking: 0.6pt,
-    smallcaps[terrain: footprint, then the gap to the nearest short and long table edges]),
+    smallcaps[terrain: the centre of each piece, measured from the nearest table edges]),
 )))
 
 // The table.
@@ -189,11 +190,11 @@
 #terrain(hill-piece, 11, 39, 8, 6, on-dark: true)[hill]
 #terrain(scrub-piece, 25, 15, 6, 4)[scrub]
 #terrain(scrub-piece, 24, 29, 6, 4)[scrub]
-#terrain(rock-piece, 32, 5.5, 6, 5)[rocky outcrop]
-#terrain(rock-piece, 32, 42.5, 6, 5, label-above: true)[rocky outcrop]
-#terrain(rock-piece, 64.5, 42, 5, 4, label-above: true)[rocks]
-#terrain(ruin-piece, 64, 27.5, 6, 5)[ruins]
-#terrain(rock-piece, 64, 9.5, 6, 5)[rock spur]
+#terrain(rock-piece, 32, 6, 6, 5)[rocky outcrop]
+#terrain(rock-piece, 32, 42, 6, 5, label-above: true)[rocky outcrop]
+#terrain(rock-piece, 63, 42, 5, 4, label-above: true)[rocks]
+#terrain(ruin-piece, 63, 28, 6, 5)[ruins]
+#terrain(rock-piece, 63, 9, 6, 5)[rock spur]
 
 // The camp: The Bait's 8" deployment circle, the 6" scoring zone and the
 // camp itself around the marked centre.
