@@ -27,7 +27,9 @@
 #armies(draft: true)[
   *1,500 points* per side: Chaos Dwarfs with Ogre allies against Dwarfs.
 
-  The Dwarf army must include one Slayer character, designated *The Hunter*.
+  The Dwarf army must include *The Hunter*, a Daemon Slayer who is the
+  army's general, and at least one unit of Troll Slayers. See *The Hunter*
+  under Special Rules.
 
   The Chaos Dwarf and Ogre army includes *The Bait*: Gorgut Skullchewer, an
   Ogre Bruiser. He is an allied model, costs no points and is added to the
@@ -117,6 +119,32 @@
 ]
 
 #special-rules(draft: true)[
+  #special-rule[The Hunter][
+    The Hunter is a Daemon Slayer and the general of the Dwarf army. He costs
+    *175 points*, counted against the army's 1,500 points and its hero budget
+    as normal. He is a Lord choice, allowed in this scenario despite the
+    Heroes-only campaign rule.
+
+    #table(
+      columns: 10,
+      align: center,
+      table.header[Daemon Slayer][M][WS][BS][S][T][W][I][A][Ld],
+      [The Hunter], [3], [7], [4], [4], [5], [3], [5], [4], [10],
+    )
+
+    *Troop type:* Infantry (Character, Dwarf).
+
+    *Equipment:* great weapon, Wards of Grimnir.
+
+    *Special rules:* Ancestral Grudge, Daemon Slayer, Deathblow, Dragon
+    Slayer, Magic Resistance (1), Relentless, Unbreakable.
+
+    *Wards of Grimnir:* the Magical Ward (6+) special rule against missile
+    attacks, and the Magic Resistance (2) special rule.
+
+    He may take no further upgrades, magic items or runic items.
+  ]
+
   #special-rule[The Bait][
     Gorgut Skullchewer is an Ogre Bruiser, a champion of his tribe with a
     string of dead rivals behind him. He is an allied model: he costs no
