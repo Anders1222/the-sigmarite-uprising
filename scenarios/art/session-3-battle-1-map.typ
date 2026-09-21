@@ -50,11 +50,11 @@
 #let score-r = 6
 #let bait-r = 8
 
-// The Dwarfs deploy within 18" of their edge. Reserves enter from a 36"
-// window on each long edge, running from the rocky outcrop to the Chaos
-// Dwarf corner, or from the Chaos Dwarf edge itself.
+// The Dwarfs deploy within 18" of their edge. Reserves enter from a 54"
+// window on each long edge, running from the Dwarf deployment zone to the
+// Chaos Dwarf corner, or from the Chaos Dwarf edge itself.
 #let dwarf-depth = 18
-#let window-l = 36
+#let window-l = dwarf-depth
 #let window-r = 72
 #let band = 1.3
 
@@ -117,16 +117,22 @@
   rect(width: w * u, height: h * u, fill: ruin,
     stroke: (paint: rock-dark, thickness: 0.8pt, dash: (array: (3pt, 2pt)))),
 )
-// Terrain labels: the name, then the footprint and the centre measured from
-// the Dwarf edge and the Right Flank edge.
+// Terrain labels: the name and footprint, then the gap between the piece and
+// the nearest short edge and the nearest long edge, so it can be placed by
+// measuring from the table edges.
 #let terrain(kind, cx, cy, w, h, body, label-above: false, on-dark: false) = {
   kind(cx, cy, w, h)
-  at-centre(cx, if label-above { cy - h / 2 - 3.0 } else { cy + h / 2 + 0.4 }, {
-    text(size: 6.8pt, fill: if on-dark { parchment } else { ink }, body)
+  let short = if cx < 36 { [#(cx - w / 2)″ from the Dwarf edge] } else {
+    [#(72 - cx - w / 2)″ from the Chaos Dwarf edge] }
+  let long = if cy < 24 { [#(cy - h / 2)″ from the Right Flank edge] } else {
+    [#(48 - cy - h / 2)″ from the Left Flank edge] }
+  at-centre(cx, if label-above { cy - h / 2 - 4.2 } else { cy + h / 2 + 0.4 }, {
+    text(size: 6.8pt, fill: if on-dark { parchment } else { ink },
+      [#body · #w″ × #h″])
     linebreak()
     text(size: 6.3pt, fill: if on-dark { parchment-dark } else { gold },
-      [#w″ × #h″ at #cx″, #cy″])
-  }, w: 14)
+      [#short #linebreak() #long])
+  }, w: 16)
 }
 
 // Title and subtitle.
@@ -140,7 +146,7 @@
 )))
 #place(dy: 1.78cm, box(width: 100%, align(center,
   text(size: 7pt, fill: gold, tracking: 0.6pt,
-    smallcaps[terrain: footprint, then centre from the Dwarf edge and the Right Flank edge]),
+    smallcaps[terrain: footprint, then the gap to the nearest short and long table edges]),
 )))
 
 // The table.
@@ -170,24 +176,24 @@
 #entry-band(window-l, 48 - band, window-r - window-l, band)
 #entry-band(72 - band, 0, band, 48)
 #at-centre((window-l + window-r) / 2, band + 0.5,
-  zone-label(ember)[Right Flank · 36″, outcrop to corner], w: 36)
+  zone-label(ember)[Right Flank · 54″, Dwarf zone to corner], w: 40)
 #at-centre((window-l + window-r) / 2, 48 - band - 2.3,
-  zone-label(ember)[Left Flank · 36″, outcrop to corner], w: 36)
-#place(dx: px(72 - band - 2.2), dy: py(camp-y - 9),
+  zone-label(ember)[Left Flank · 54″, Dwarf zone to corner], w: 40)
+#place(dx: px(72 - band) + (band * u - 0.3cm) / 2, dy: py(camp-y - 9),
   rotate(-90deg, reflow: true, zone-label(ember)[Chaos Dwarf Table Edge]))
 
 // Terrain. Screens on each long edge just west of the flank windows, a
 // smaller outcrop east of them, cover for the rear entry, a hill for the
 // Dwarf war machines and scrub on the walk in. The lanes from every entry
 // window to the camp stay clear.
-#terrain(hill-piece, 11, 39, 9, 6, on-dark: true)[hill]
-#terrain(scrub-piece, 26, 15, 7, 4)[scrub]
-#terrain(scrub-piece, 23, 31, 7, 4)[scrub]
-#terrain(rock-piece, 32, 5, 7, 5)[rocky outcrop]
-#terrain(rock-piece, 32, 42, 7, 5, label-above: true)[rocky outcrop]
-#terrain(rock-piece, 64, 42, 5, 4, label-above: true)[rocks]
-#terrain(ruin-piece, 63, 30, 6, 5)[ruins]
-#terrain(rock-piece, 64, 9, 6, 5)[rock spur]
+#terrain(hill-piece, 11, 39, 8, 6, on-dark: true)[hill]
+#terrain(scrub-piece, 25, 15, 6, 4)[scrub]
+#terrain(scrub-piece, 24, 29, 6, 4)[scrub]
+#terrain(rock-piece, 32, 5.5, 6, 5)[rocky outcrop]
+#terrain(rock-piece, 32, 42.5, 6, 5, label-above: true)[rocky outcrop]
+#terrain(rock-piece, 64.5, 42, 5, 4, label-above: true)[rocks]
+#terrain(ruin-piece, 64, 27.5, 6, 5)[ruins]
+#terrain(rock-piece, 64, 9.5, 6, 5)[rock spur]
 
 // The camp: The Bait's 8" deployment circle, the 6" scoring zone and the
 // camp itself around the marked centre.
@@ -205,11 +211,12 @@
   [Ogre camp]), w: 8)
 #at-centre(camp-x, camp-y + 0.9, text(size: 6.6pt, fill: ink,
   [centre marker]), w: 8)
-#place(dx: px(camp-x - bait-r - 0.8) - 18 * u, dy: py(camp-y + 5.4),
+#place(dx: px(camp-x - 5) - 18 * u, dy: py(camp-y + 9),
   box(width: 18 * u, align(right, text(size: 7.1pt, fill: ember,
     [6″ · Hold the Killing Ground]))))
-#place(dx: px(camp-x + 8.6), dy: py(camp-y - 8.2), text(size: 7.1pt, fill: gold,
-  [8″ · The Bait and #linebreak() up to 300 pts of Ogres]))
+#place(dx: px(camp-x - 0.9) - 18 * u, dy: py(camp-y - 10.5),
+  box(width: 18 * u, align(right, text(size: 7.1pt, fill: gold,
+    [8″ · The Bait and #linebreak() up to 300 pts of Ogres]))))
 
 // Walking distances: the Dwarf line to the scoring zone, and each reserve
 // entry to the scoring zone.
@@ -232,8 +239,8 @@
   [
     #swatch(rect(width: 100%, height: 100%, fill: ember-light,
       stroke: (paint: ember, thickness: 1.1pt, dash: (array: (3pt, 2pt)))))
-    #h(3pt) Reserve entry: the flank windows, 36″ from the rocky outcrop to
-    the corner, and the Chaos Dwarf edge.
+    #h(3pt) Reserve entry: the flank windows, 54″ from the Dwarf deployment
+    zone to the corner, and the Chaos Dwarf edge.
   ],
   [
     #swatch(align(horizon, circle(radius: 4pt, fill: bait-zone,
