@@ -29,8 +29,9 @@
 
   The Dwarf army must include one Slayer character, designated *The Hunter*.
 
-  The Chaos Dwarf and Ogre army must include one Ogre character, designated
-  *The Bait*.
+  The Chaos Dwarf and Ogre army includes *The Bait*: Gorgut Skullchewer, an
+  Ogre Bruiser. He costs no points and is added to the army on top of its
+  1,500 points. See *The Bait* under Special Rules.
 
   Campaign list rules apply:
   - "Heroes" only
@@ -116,6 +117,29 @@
 ]
 
 #special-rules(draft: true)[
+  #special-rule[The Bait][
+    Gorgut Skullchewer is an Ogre Bruiser, a champion of his tribe with a
+    string of dead rivals behind him and no idea he has been staked out for
+    the axe. He costs no points and is not counted against the army's 1,500
+    points or its hero budget.
+
+    #table(
+      columns: 10,
+      align: center,
+      table.header[Bruiser][M][WS][BS][S][T][W][I][A][Ld],
+      [Gorgut Skullchewer], [6], [5], [4], [5], [5], [4], [4], [5], [8],
+    )
+
+    *Troop type:* Monstrous Infantry (Character, Ogre).
+
+    *Equipment:* hand weapon, great weapon, gut-plate, light armour.
+
+    *Special rules:* Natural Armour (6+), Ogre Charge.
+
+    He may not take Big Names, magic items, Gnoblars or a mount. He may join
+    the Ogre troops deployed with him.
+  ]
+
   #special-rule[Springing the Trap][
     Beginning on Chaos Dwarf Turn 2, roll a D6 for each reserve unit at the
     start of the Chaos Dwarf turn.
