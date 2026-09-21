@@ -50,9 +50,11 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          cp index.html manifest.json app.webmanifest _site/
+          cp index.html reference.html site.css manifest.json app.webmanifest _site/
           cp -r pdfs _site/
           cp -r factions _site/
+          mkdir -p _site/scenarios/art
+          cp scenarios/art/*.png _site/scenarios/art/
           cp "Campaign Reference.md" _site/
 
       - uses: actions/upload-pages-artifact@v3

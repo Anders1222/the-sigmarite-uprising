@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+:root {
+  --paper: #efe7d6;
+  --card: #e7ddc8;
+  --ink: #2a1f14;
+  --muted: #6d5c45;
+  --rule: #b6a284;
+  --accent: #7a3b1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14100e;
+    --card: #1c1713;
+    --ink: #d8ccb4;
+    --muted: #9a8f76;
+    --rule: #2c2118;
+    --accent: #d4af57;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* min-width: 0 so the flex item may shrink below its content's minimum width,
+   which is what keeps the page from scrolling sideways on a phone. */
+main { width: 100%; max-width: 62rem; min-width: 0; }
+
+h1 {
+  margin: 0 0 .2rem;
+  font-family: "IM Fell English SC", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sub { color: var(--muted); font-style: italic; margin: 0 0 1.6rem; }
+
+.flavour { margin: 0 0 1rem; font-style: italic; color: var(--muted); max-width: 44rem; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem .5rem;
+  margin: 1.4rem 0 2.5rem;
+}
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
+
+.section {
+  margin: 2.5rem 0 1rem;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+/* Pill links share the reference's control-button look, as anchors. */
+.pill {
+  font-size: .82rem;
+  letter-spacing: .04em;
+  padding: .2rem .7rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pill:hover { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+
+.books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Spans the row so a group reads as a band rather than as a card. */
+.head {
+  flex: 1 0 100%;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  margin: .6rem 0 -.2rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .3rem;
+}
+.head:first-child { margin-top: 0; }
+.head h2 {
+  margin: 0;
+  font-size: .95rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+/* Two cards fill a row; a lone card takes half the row and sits centred. */
+.book {
+  flex: 1 1 17rem;
+  max-width: calc(50% - .5rem);
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: .9rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--card);
+}
+
+.book img,
+.book .nothumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.book .nothumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--muted);
+}
+
+.book > div { min-width: 0; }
+
+.book h2 {
+  margin: 0 0 .15rem;
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  line-height: 1.25;
+}
+.book h2 a { color: var(--ink); text-decoration: none; }
+.book h2 a:hover { color: var(--accent); }
+.book p { margin: 0; color: var(--muted); font-size: .85rem; }
+
+.book .links { margin: .6rem 0 0; }
+
+.error { color: var(--accent); font-size: .9rem; }
+.error code { font-size: .85em; }
+
+footer { margin-top: 1.5rem; font-size: .82rem; color: var(--muted); }
+footer p { margin: .7rem 0; }
+
+a { color: var(--accent); }
+
+.back { display: inline-block; margin: 0 0 2.5rem; font-size: .85rem; }
+
+/* Rendered Markdown of the campaign reference. */
+.md { max-width: 48rem; }
+.md h1, .md h2, .md h3, .md h4 {
+  letter-spacing: .04em;
+  line-height: 1.25;
+  margin: 2rem 0 .6rem;
+}
+.md h1 { font-size: 1.5rem; text-transform: uppercase; }
+.md h2 { font-size: 1.2rem; text-transform: uppercase; color: var(--muted); }
+.md h3 { font-size: 1.05rem; }
+.md h4 { font-size: .95rem; }
+.md p { margin: .8rem 0; }
+.md ul, .md ol { margin: .8rem 0; padding-left: 1.4rem; }
+.md li { margin: .3rem 0; }
+.md hr { margin: 2rem 0; }
+.md blockquote {
+  margin: 1rem 0;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+.md code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: .85em;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0 .25em;
+}
+.md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: .9rem;
+}
+.md th, .md td {
+  border: 1px solid var(--rule);
+  padding: .35rem .6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.md th { font-weight: 700; background: var(--card); }
+
+@media (max-width: 30rem) {
+  body { padding: 2rem 1.5rem 3rem; }
+  .book { max-width: 100%; }
+  .book { grid-template-columns: 60px minmax(0, 1fr); gap: .8rem; }
+  .md table { display: block; overflow-x: auto; }
+}

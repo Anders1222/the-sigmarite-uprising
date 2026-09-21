@@ -4,18 +4,18 @@
     "reference": "Campaign Reference.md"
   },
   "factions": [
-    { "id": "furnace-prophet", "name": "The Host of the Furnace Prophet", "player": "Anders", "tabs": [
+    { "id": "furnace-prophet", "name": "The Host of the Furnace Prophet", "player": "Anders", "type": "Empire", "art": "factions/furnace-prophet/art.png", "tabs": [
       { "id": "army", "label": "Army Sheet", "typ": "factions/furnace-prophet/army.typ", "pdf": "pdfs/furnace-prophet-army.pdf", "print": "pdfs/furnace-prophet-army-print.pdf" }
     ] },
-    { "id": "chaos-dwarfs", "name": "Chaos Dwarfs", "player": "Frederik", "tabs": [
+    { "id": "chaos-dwarfs", "name": "Chaos Dwarfs", "player": "Frederik", "type": "Chaos Dwarfs", "art": null, "tabs": [
       { "id": "army", "label": "Army Sheet", "typ": "factions/chaos-dwarfs/army.typ", "pdf": "pdfs/chaos-dwarfs-army.pdf", "print": "pdfs/chaos-dwarfs-army-print.pdf" }
     ] }
   ],
   "scenarios": [
-    { "id": "prologue", "name": "The First Battle", "typ": "scenarios/prologue-the-first-battle.typ", "pdf": "pdfs/prologue-the-first-battle.pdf", "print": "pdfs/prologue-the-first-battle-print.pdf", "report": "pdfs/prologue-the-first-battle-report.pdf", "map": null, "status": "completed", "result": "" },
-    { "id": "s1b1", "name": "The 14th Lizardmen Incursion", "typ": "scenarios/session-1-battle-1.typ", "pdf": "pdfs/session-1-battle-1.pdf", "print": "pdfs/session-1-battle-1-print.pdf", "report": "pdfs/session-1-battle-1-report.pdf", "map": null, "status": "planned", "result": "" },
-    { "id": "s1b2", "name": "Tomb Raider", "typ": "scenarios/session-1-battle-2.typ", "pdf": "pdfs/session-1-battle-2.pdf", "print": "pdfs/session-1-battle-2-print.pdf", "report": "pdfs/session-1-battle-2-report.pdf", "map": "scenarios/art/session-1-battle-2-map.png", "status": "planned", "result": "" },
-    { "id": "s2b1", "name": "The Sacred Herd", "typ": "scenarios/session-2-battle-1.typ", "pdf": "pdfs/session-2-battle-1.pdf", "print": "pdfs/session-2-battle-1-print.pdf", "report": "pdfs/session-2-battle-1-report.pdf", "map": "scenarios/art/session-2-battle-1-map.png", "status": "planned", "result": "" },
-    { "id": "s2b2", "name": "A Walk on the Wild Side", "typ": "scenarios/session-2-battle-2.typ", "pdf": "pdfs/session-2-battle-2.pdf", "print": "pdfs/session-2-battle-2-print.pdf", "report": "pdfs/session-2-battle-2-report.pdf", "map": "scenarios/art/session-2-battle-2-map.png", "status": "planned", "result": "" }
+    { "id": "prologue", "name": "The First Battle", "session": "Prologue", "round": "Prologue", "art": null, "typ": "scenarios/prologue-the-first-battle.typ", "pdf": "pdfs/prologue-the-first-battle.pdf", "print": "pdfs/prologue-the-first-battle-print.pdf", "report": "pdfs/prologue-the-first-battle-report.pdf", "map": null, "status": "completed", "result": "" },
+    { "id": "s1b1", "name": "The 14th Lizardmen Incursion", "session": "Session 1", "round": "Session 1 · Battle One", "art": "scenarios/art/session-1-battle-1.png", "typ": "scenarios/session-1-battle-1.typ", "pdf": "pdfs/session-1-battle-1.pdf", "print": "pdfs/session-1-battle-1-print.pdf", "report": "pdfs/session-1-battle-1-report.pdf", "map": null, "status": "planned", "result": "" },
+    { "id": "s1b2", "name": "Tomb Raider", "session": "Session 1", "round": "Session 1 · Battle Two", "art": "scenarios/art/session-1-battle-2.png", "typ": "scenarios/session-1-battle-2.typ", "pdf": "pdfs/session-1-battle-2.pdf", "print": "pdfs/session-1-battle-2-print.pdf", "report": "pdfs/session-1-battle-2-report.pdf", "map": "scenarios/art/session-1-battle-2-map.png", "status": "planned", "result": "" },
+    { "id": "s2b1", "name": "The Sacred Herd", "session": "Session 2", "round": "Session 2 · Battle One", "art": "scenarios/art/session-2-battle-1.png", "typ": "scenarios/session-2-battle-1.typ", "pdf": "pdfs/session-2-battle-1.pdf", "print": "pdfs/session-2-battle-1-print.pdf", "report": "pdfs/session-2-battle-1-report.pdf", "map": "scenarios/art/session-2-battle-1-map.png", "status": "planned", "result": "" },
+    { "id": "s2b2", "name": "A Walk on the Wild Side", "session": "Session 2", "round": "Session 2 · Battle Two", "art": "scenarios/art/session-2-battle-2.png", "typ": "scenarios/session-2-battle-2.typ", "pdf": "pdfs/session-2-battle-2.pdf", "print": "pdfs/session-2-battle-2-print.pdf", "report": "pdfs/session-2-battle-2-report.pdf", "map": "scenarios/art/session-2-battle-2-map.png", "status": "planned", "result": "" }
   ]
 }
