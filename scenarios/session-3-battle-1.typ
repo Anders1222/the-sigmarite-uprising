@@ -86,7 +86,7 @@
   ]
 ]
 
-#battlefield(draft: true)[
+#battlefield[
   The table is 6 by 4 feet, 72" by 48". The Dwarfs have one short edge, the
   Chaos Dwarfs the other.
 
@@ -114,7 +114,7 @@
   )
 ]
 
-#deployment(draft: true)[
+#deployment[
   The Dwarf army deploys within 18" of its short table edge, the Dwarf edge
   on the map.
 
@@ -136,7 +136,7 @@
   assignments down. They are revealed as the units arrive.
 ]
 
-#first-turn(draft: true)[
+#first-turn[
   #to-be-decided[
     Who takes the first turn is not yet settled. The reserve rolls assume the
     Chaos Dwarfs have a Turn 1 in which nothing arrives, so the Dwarfs
@@ -148,7 +148,7 @@
   The battle lasts six turns.
 ]
 
-#section("Objectives", accent: ember, draft: true)[
+#section("Objectives", accent: ember)[
   #special-rule[I · A Slayer's Death][
     The Chaos Dwarfs and Ogres score this objective if *The Hunter* is dead at
     the end of the battle.
@@ -175,7 +175,7 @@
   ]
 ]
 
-#special-rules(draft: true)[
+#special-rules[
   #special-rule[Springing the Trap][
     Beginning on Chaos Dwarf Turn 2, roll a D6 for each reserve unit at the
     start of the Chaos Dwarf turn.
@@ -205,7 +205,7 @@
   ]
 ]
 
-#aftermath(draft: true)[
+#aftermath[
   #special-rule[Campaign Consequences][
     The more objectives the Chaos Dwarfs secure, the more willing the Ogre
     tribe will be to enter an alliance with them. For *each objective* the
