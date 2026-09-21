@@ -95,9 +95,13 @@
   The rest of the table should carry rocky hills, scrub, ruins or similar
   terrain, able to conceal the approaching ambushers.
 
-  #to-be-decided[
-    A battlefield map is still to be drawn.
-  ]
+  #block(
+    width: 100%,
+    stroke: 1pt + gold,
+    inset: 3pt,
+    fill: parchment-dark,
+    image("art/session-3-battle-1-map.png", width: 100%),
+  )
 ]
 
 #deployment(draft: true)[
