@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campaign Reference · The Sigmarite Uprising</title>
+<link rel="icon" href="data:,">
+<link rel="manifest" href="app.webmanifest">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<main>
+  <h1>Campaign Reference</h1>
+  <p class="sub">The authoritative record: rules, roster, session log and rewards.</p>
+  <a class="back pill" href="index.html">Back to the campaign</a>
+
+  <article class="md" id="reference"></article>
+
+  <hr>
+  <footer>
+    <p>
+      The Sigmarite Uprising is a private narrative campaign played with the
+      Warhammer Armies Project rules. Scenario sheets, battle reports and army
+      sheets are typeset with Typst from the sources in the repository.
+    </p>
+    <p>
+      Warhammer, Warhammer Fantasy Battle and all associated names, races and
+      places are trademarks of Games Workshop Limited. This campaign record is
+      unofficial and unaffiliated, and no challenge to their status is intended.
+    </p>
+    <p>Not for sale.</p>
+  </footer>
+</main>
+
+<script>
+// Enough Markdown for the campaign reference: headings, paragraphs, emphasis,
+// code spans, links, tables, lists, blockquotes and horizontal rules.
+function parseMd(md) {
+  let html = '';
+  const lines = md.split('\n');
+  let inTable = false, tableRows = [], inList = false, listType = 'ul', inBq = false, bqLines = [];
+
+  function flushTable() {
+    if (!tableRows.length) return '';
+    let h = '<table><thead><tr>';
+    tableRows[0].forEach(c => h += `<th>${inline(c.trim())}</th>`);
+    h += '</tr></thead><tbody>';
+    for (let i = 1; i < tableRows.length; i++) {
+      if (tableRows[i].every(c => /^[\s\-:]+$/.test(c))) continue;
+      h += '<tr>'; tableRows[i].forEach(c => h += `<td>${inline(c.trim())}</td>`); h += '</tr>';
+    }
+    h += '</tbody></table>'; tableRows = []; return h;
+  }
+  function flushList() { if (!inList) return ''; inList = false; return `</${listType}>`; }
+  function flushBq() { if (!inBq) return ''; inBq = false; let r = `<blockquote>${parseMd(bqLines.join('\n'))}</blockquote>`; bqLines = []; return r; }
+  function inline(t) {
+    t = t.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+    t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    t = t.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    t = t.replace(/`(.+?)`/g, '<code>$1</code>');
+    t = t.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
+    return t;
+  }
+
+  for (const line of lines) {
+    const tr = line.trim();
+    if (tr.startsWith('> ')) { if (!inBq) { html += flushTable()+flushList(); inBq = true; bqLines = []; } bqLines.push(tr.slice(2)); continue; }
+    else if (inBq && tr === '') { bqLines.push(''); continue; }
+    else if (inBq) html += flushBq();
+    if (tr.startsWith('|') && tr.endsWith('|')) { if (!inTable) { html += flushList(); inTable = true; tableRows = []; } tableRows.push(tr.split('|').slice(1,-1)); continue; }
+    else if (inTable) { html += flushTable(); inTable = false; }
+    if (/^#{1,4}\s/.test(tr)) {
+      html += flushList();
+      const lvl = tr.match(/^#+/)[0].length;
+      html += `<h${lvl}>${inline(tr.replace(/^#+\s/,''))}</h${lvl}>`;
+      continue;
+    }
+    if (/^-{3,}$|^\*{3,}$/.test(tr)) { html += flushList()+'<hr>'; continue; }
+    if (/^[-*]\s/.test(tr)) { if (!inList) { inList = true; listType = 'ul'; html += '<ul>'; } html += `<li>${inline(tr.slice(2))}</li>`; continue; }
+    if (/^\d+\.\s/.test(tr)) { if (!inList) { inList = true; listType = 'ol'; html += '<ol>'; } html += `<li>${inline(tr.replace(/^\d+\.\s/,''))}</li>`; continue; }
+    if (inList && tr !== '') html += flushList();
+    if (tr === '') { if (inList) html += flushList(); continue; }
+    html += `<p>${inline(tr)}</p>`;
+  }
+  return html + flushTable() + flushList() + flushBq();
+}
+
+async function init() {
+  const target = document.getElementById('reference');
+  try {
+    const response = await fetch('Campaign Reference.md');
+    if (!response.ok) throw new Error(response.status);
+    // The file opens with its own title, which the page already carries above.
+    const text = (await response.text()).replace(/^# [^\r\n]*\r?\n/, '');
+    target.innerHTML = parseMd(text);
+  } catch (error) {
+    target.innerHTML = '<p class="error">Could not load the campaign reference. Serve the folder with a local web server, e.g. <code>python -m http.server</code>, or view the site on GitHub Pages.</p>';
+  }
+}
+
+init();
+</script>
+</body>
+</html>

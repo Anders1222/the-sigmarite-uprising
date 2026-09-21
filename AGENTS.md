@@ -10,7 +10,9 @@ This repo is the living record of a Warhammer Fantasy Battles narrative campaign
 - `reports/*.typ` — battle reports, one per scenario, importing the template as `../scenarios/template.typ`
 - `reports/photos/` — photographs taken at the table, embedded in the reports
 - `factions/<name>/army.typ` — army sheets (warband rosters), one per player, written in Typst and compiled to `pdfs/<name>-army.pdf`
-- `manifest.json` — drives the campaign site (`index.html`): factions, scenarios, PDF paths, status
+- `manifest.json` — drives the campaign site (`index.html`): factions, scenarios, PDF paths, cover art, session and round labels, status. The site is a static catalogue: every document is a plain link to its PDF, nothing is embedded
+- `site.css` — the styles shared by `index.html` and `reference.html`
+- `reference.html` — renders `Campaign Reference.md` on its own page
 - `pdfs/` — compiled output, gitignored; never commit PDFs
 - `build.ps1` — compiles every scenario, report and army sheet to `pdfs/` locally, in both editions (requires the Typst CLI)
 - `.github/workflows/deploy.yml` — on push to `main`: compiles all `.typ` files and deploys the site to GitHub Pages
@@ -22,7 +24,7 @@ Each play session has exactly **two scenarios and two corresponding battle repor
 - `scenarios/session-<n>-battle-<m>.typ` — the scenario sheet
 - `reports/session-<n>-battle-<m>-report.typ` — its battle report, written after the battle
 
-Session work is developed on a branch named `session_<n>`; a report written later gets its own branch, e.g. `report_session_1`. Every scenario gets a `manifest.json` entry with `id`, `name`, `typ`, `pdf` (`pdfs/<basename>.pdf`), `print` (`pdfs/<basename>-print.pdf`), `report`, `map`, `status` (`planned` or `completed`) and `result`. The site shows the Battle Report button only once `status` is `completed`, and the Print Version button whenever `print` is set.
+Session work is developed on a branch named `session_<n>`; a report written later gets its own branch, e.g. `report_session_1`. Every scenario gets a `manifest.json` entry with `id`, `name`, `session` (the band the card sits under, e.g. `Session 1`), `round` (the label from the scenario sheet, e.g. `Session 1 · Battle One`), `art` (the cover PNG under `scenarios/art/`, or `null`), `typ`, `pdf` (`pdfs/<basename>.pdf`), `print` (`pdfs/<basename>-print.pdf`), `report`, `map`, `status` (`planned` or `completed`) and `result`. The site groups the battle cards by `session`, uses `art` as the card thumbnail, and shows the Battle report links only once `status` is `completed`.
 
 ## Scenario document format
 
@@ -140,7 +142,7 @@ Each faction's roster is a Typst army sheet, `factions/<name>/army.typ`, importi
 )
 ```
 
-Page 1 is a cover: masthead, faction-type box, optional `art:` and the lore. Artwork defaults to a full-width frame that crops the image; pass `art-fit: "contain"` (and optionally `art-height:`) to show a portrait image whole in a frame that hugs it. Every `#hero` then gets its own page: a profile line, and four boxed panels for Equipment, Special Rules, Wounds and Experience Buffs. Equipment entries are an item, an `(item, note)` pair, or a `magic-item(name, kind:)[rule]`, which lists the item under Equipment with its kind on a second line and repeats its rule under Special Rules headed by the item name (points costs are not recorded); empty rows are padded to six so gear won at the table can be pencilled in, and `wounds`/`experience` left as `none` render as empty boxes for the same reason. The manifest entry for a faction tab uses `pdf` and `print` (like scenarios) instead of `md`, and the site embeds the PDF.
+Page 1 is a cover: masthead, faction-type box, optional `art:` and the lore. Artwork defaults to a full-width frame that crops the image; pass `art-fit: "contain"` (and optionally `art-height:`) to show a portrait image whole in a frame that hugs it. Every `#hero` then gets its own page: a profile line, and four boxed panels for Equipment, Special Rules, Wounds and Experience Buffs. Equipment entries are an item, an `(item, note)` pair, or a `magic-item(name, kind:)[rule]`, which lists the item under Equipment with its kind on a second line and repeats its rule under Special Rules headed by the item name (points costs are not recorded); empty rows are padded to six so gear won at the table can be pencilled in, and `wounds`/`experience` left as `none` render as empty boxes for the same reason. The manifest entry for a faction tab uses `pdf` and `print` (like scenarios) instead of `md`, the faction itself carries a `type` label and an `art` cover (or `null`), and the site links to the PDF.
 
 ## Writing style
 
