@@ -119,9 +119,8 @@
 #special-rules(draft: true)[
   #special-rule[The Bait][
     Gorgut Skullchewer is an Ogre Bruiser, a champion of his tribe with a
-    string of dead rivals behind him and no idea he has been staked out for
-    the axe. He costs no points and is not counted against the army's 1,500
-    points or its hero budget.
+    string of dead rivals behind him. He costs no points and is not counted
+    against the army's 1,500 points or its hero budget.
 
     #table(
       columns: 10,
@@ -132,12 +131,10 @@
 
     *Troop type:* Monstrous Infantry (Character, Ogre).
 
-    *Equipment:* hand weapon, great weapon, gut-plate, light armour.
+    *Equipment:* great weapon, gut-plate, light armour.
 
     *Special rules:* Natural Armour (6+), Ogre Charge.
 
-    He may not take Big Names, magic items, Gnoblars or a mount. He may join
-    the Ogre troops deployed with him.
   ]
 
   #special-rule[Springing the Trap][
