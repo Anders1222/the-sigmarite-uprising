@@ -7,8 +7,6 @@
   --muted: #6d5c45;
   --rule: #b6a284;
   --accent: #7a3b1d;
-  --dot-fought: #937530;
-  --dot-planned: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +17,6 @@
     --muted: #9a8f76;
     --rule: #2c2118;
     --accent: #d4af57;
-    --dot-fought: #e0531f;
-    --dot-planned: transparent;
   }
 }
 
@@ -158,18 +154,6 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
 .book h2 a { color: var(--ink); text-decoration: none; }
 .book h2 a:hover { color: var(--accent); }
 .book p { margin: 0; color: var(--muted); font-size: .85rem; }
-
-.dot {
-  display: inline-block;
-  width: .5em;
-  height: .5em;
-  margin-right: .4em;
-  border-radius: 50%;
-  border: 1px solid var(--dot-fought);
-  background: var(--dot-planned);
-  vertical-align: baseline;
-}
-.book[data-status="completed"] .dot { background: var(--dot-fought); }
 
 .book .links { margin: .6rem 0 0; }
 

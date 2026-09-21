@@ -70,16 +70,11 @@ function scenarioCard(scenario) {
     // has a print companion beside it.
     links.push(pill(scenario.report.replace(/\.pdf$/, '-print.pdf'), 'Report (print)'));
   }
-  const fought = scenario.status === 'completed';
-  const status = fought
-    ? 'Fought' + (scenario.result ? ' · ' + scenario.result : '')
-    : 'Planned';
   return `<li class="book" data-status="${esc(scenario.status)}">
     ${thumb(scenario.pdf, scenario.art, scenario.name, '&#9874;')}
     <div>
       <h2><a href="${esc(scenario.pdf)}">${esc(scenario.name)}</a></h2>
       <p>${esc(scenario.round || '')}</p>
-      <p><span class="dot"></span>${esc(status)}</p>
       <p class="links">${links.join('')}</p>
     </div>
   </li>`;
