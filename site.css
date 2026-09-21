@@ -89,14 +89,15 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
 }
 
-/* Spans the grid so a group reads as a band rather than as a card. */
+/* Spans the row so a group reads as a band rather than as a card. */
 .head {
-  grid-column: 1 / -1;
+  flex: 1 0 100%;
   display: flex;
   align-items: baseline;
   gap: .7rem;
@@ -111,9 +112,11 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 0; }
   letter-spacing: .09em;
   text-transform: uppercase;
 }
-.head span { color: var(--muted); font-size: .78rem; margin-left: auto; }
 
+/* Two cards fill a row; a lone card takes half the row and sits centred. */
 .book {
+  flex: 1 1 17rem;
+  max-width: calc(50% - .5rem);
   display: grid;
   grid-template-columns: 78px minmax(0, 1fr);
   gap: 1rem;
@@ -225,7 +228,7 @@ a { color: var(--accent); }
 
 @media (max-width: 30rem) {
   body { padding: 2rem 1.5rem 3rem; }
-  .books { grid-template-columns: 1fr; }
+  .book { max-width: 100%; }
   .book { grid-template-columns: 60px minmax(0, 1fr); gap: .8rem; }
   .md table { display: block; overflow-x: auto; }
 }

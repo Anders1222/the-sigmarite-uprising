@@ -61,16 +61,6 @@ function pill(href, label) {
   return `<a class="pill" href="${esc(href)}">${esc(label)}</a>`;
 }
 
-// A band counts its battles as "N fought, N planned", dropping a zero part.
-function bandCount(group) {
-  const fought = group.filter(s => s.status === 'completed').length;
-  const planned = group.length - fought;
-  const parts = [];
-  if (fought) parts.push(fought + ' fought');
-  if (planned) parts.push(planned + ' planned');
-  return parts.join(', ');
-}
-
 function scenarioCard(scenario) {
   const links = [pill(scenario.pdf, 'Scenario')];
   if (scenario.print) links.push(pill(scenario.print, 'Print'));
@@ -123,7 +113,7 @@ function renderBattles(scenarios) {
     group.items.push(scenario);
   }
   return groups.map(group => `<li class="head">
-      <h2>${esc(group.label)}</h2><span>${esc(bandCount(group.items))}</span>
+      <h2>${esc(group.label)}</h2>
     </li>` + group.items.map(scenarioCard).join('')).join('');
 }
 
