@@ -188,8 +188,7 @@
     flank may enter anywhere along that flank's window, between the Dwarf
     deployment zone and the Chaos Dwarf corner.
 
-    An arriving unit may move normally, but may not charge during the turn it
-    arrives.
+    An arriving unit may move and charge as normal in the turn it arrives.
   ]
 
   #special-rule[The Slayer Takes the Bait][
