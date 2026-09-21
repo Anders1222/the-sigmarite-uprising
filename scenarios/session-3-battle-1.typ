@@ -32,11 +32,13 @@
   The Chaos Dwarf and Ogre army must include one Ogre character, designated
   *The Bait*.
 
-  #to-be-decided[
-    Whether the campaign list rules used in Session 2 apply to this battle:
-    "Heroes" only, up to 15% rare, a hero budget of 350 points, and one magic
-    item worth a maximum of 25 points.
+  Campaign list rules apply:
+  - "Heroes" only
+  - Up to 15% rare
+  - Hero budget: 350 points
+  - One magic item worth a maximum of 25 points
 
+  #to-be-decided[
     How the Ogre contingent is taken: an allied contingent, or a single mixed
     list.
   ]
