@@ -170,6 +170,8 @@
       once the ambush was done.
 
     The more objectives the Chaos Dwarfs secure, the more willing the Ogre
-    tribe will be to enter an alliance with them.
+    tribe will be to enter an alliance with them. For *each objective* the
+    Chaos Dwarfs secure, they gain *100 points of Ogre allies* in the final
+    scenario of the campaign, up to 300 points for all three.
   ]
 ]
