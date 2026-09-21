@@ -91,8 +91,12 @@
   Chaos Dwarfs the other.
 
   A prominent piece of terrain represents the Ogre camp. Its centre sits on
-  the table's centre line, 24" from the Chaos Dwarf table edge, and is marked
-  so that distances can be measured from it.
+  the table's centre line, 24" from the Chaos Dwarf table edge. A building
+  stands at that centre, a stone hall, an Ogre lodge or a ruined tower, and
+  the centre of the building is the centre of the camp, from which every
+  distance is measured. It follows the normal rules for buildings: it blocks
+  line of sight and gives *The Bait* somewhere to shelter from the Dwarf war
+  machines until the Slayer reaches him.
 
   The rest of the terrain is laid out as shown on the map, each piece placed
   by its centre. The pieces themselves are whatever the collection holds:
@@ -114,8 +118,8 @@
   The Dwarf army deploys within 18" of its short table edge, the Dwarf edge
   on the map.
 
-  *The Bait* and up to 300 points of Ogre troops deploy within 8" of the
-  centre of the Ogre camp, 24" from the Chaos Dwarf table edge.
+  *The Bait* deploys within 8" of the centre of the Ogre camp, 24" from the
+  Chaos Dwarf table edge. He may start inside the building.
 
   The remainder of the Chaos Dwarf and Ogre army begins in reserve.
 

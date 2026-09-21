@@ -206,18 +206,20 @@
     stroke: (paint: ember, thickness: 1.5pt, dash: (array: (6pt, 3.5pt)))))
 #place(dx: px(camp-x) - 3.2 * u, dy: py(camp-y) - 3.2 * u,
   circle(radius: 3.2 * u, fill: camp-fill, stroke: 0.7pt + iron))
+#place(dx: px(camp-x) - 2 * u, dy: py(camp-y) - 1.5 * u,
+  rect(width: 4 * u, height: 3 * u, fill: ruin, stroke: 0.8pt + iron))
 #place(dx: px(camp-x) - 0.45 * u, dy: py(camp-y) - 0.45 * u,
   circle(radius: 0.45 * u, fill: ember, stroke: 0.5pt + iron))
 #at-centre(camp-x, camp-y - 4.9, text(size: 7.5pt, weight: 700, fill: ink,
   [Ogre camp]), w: 8)
-#at-centre(camp-x, camp-y + 0.9, text(size: 6.6pt, fill: ink,
-  [centre marker]), w: 8)
+#at-centre(camp-x, camp-y + 1.7, text(size: 6.6pt, fill: ink,
+  [building]), w: 8)
 #place(dx: px(camp-x - 5) - 18 * u, dy: py(camp-y + 9),
   box(width: 18 * u, align(right, text(size: 7.1pt, fill: ember,
     [6″ · Hold the Killing Ground]))))
 #place(dx: px(camp-x - 0.9) - 18 * u, dy: py(camp-y - 10.5),
   box(width: 18 * u, align(right, text(size: 7.1pt, fill: gold,
-    [8″ · The Bait and #linebreak() up to 300 pts of Ogres]))))
+    [8″ · The Bait #linebreak() deploys within]))))
 
 // Walking distances: the Dwarf line to the scoring zone, and each reserve
 // entry to the scoring zone.
@@ -246,7 +248,7 @@
   [
     #swatch(align(horizon, circle(radius: 4pt, fill: bait-zone,
       stroke: (paint: ember, thickness: 1pt, dash: (array: (2pt, 1.5pt))))))
-    #h(3pt) The camp, 24″ from the Chaos Dwarf edge: The Bait deploys within
-    8″, the 6″ ring is the objective.
+    #h(3pt) The camp, 24″ from the Chaos Dwarf edge, with a building at its
+    centre: The Bait deploys within 8″, the 6″ ring is the objective.
   ],
 )))
