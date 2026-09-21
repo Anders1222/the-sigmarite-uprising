@@ -47,10 +47,10 @@
     Heroes-only campaign rule.
 
     #table(
-      columns: 10,
+      columns: 11,
       align: center,
-      table.header[Daemon Slayer][M][WS][BS][S][T][W][I][A][Ld],
-      [Skorri Bloodaxe], [3], [7], [4], [4], [5], [3], [5], [4], [10],
+      table.header[Daemon Slayer][M][WS][BS][S][T][W][I][A][Ld][Points],
+      [Skorri Bloodaxe], [3], [7], [4], [4], [5], [3], [5], [4], [10], [175],
     )
 
     *Troop type:* Infantry (Character, Dwarf).
@@ -73,10 +73,10 @@
     budget, and the usual rules for allies apply to him.
 
     #table(
-      columns: 10,
+      columns: 11,
       align: center,
-      table.header[Bruiser][M][WS][BS][S][T][W][I][A][Ld],
-      [Gorgut Skullchewer], [6], [5], [4], [5], [5], [4], [4], [5], [8],
+      table.header[Bruiser][M][WS][BS][S][T][W][I][A][Ld][Points],
+      [Gorgut Skullchewer], [6], [5], [4], [5], [5], [4], [4], [5], [8], [0],
     )
 
     *Troop type:* Monstrous Infantry (Character, Ogre).
