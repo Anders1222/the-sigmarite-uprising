@@ -3,6 +3,7 @@
 #show: scenario.with(
   title: [Slay the Masters],
   round: [Prologue],
+  art: "art/prologue-the-first-battle.png",
   sides: (
     ([Chaos Dwarfs], [The Slavers]),
     ([The Empire], [The Uprising]),
