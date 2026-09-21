@@ -4,7 +4,7 @@
   title: [The Slayer Bait],
   round: [Session 3 · Battle One],
   sides: (
-    ([Chaos Dwarfs], [With Ogre allies]),
+    ([Chaos Dwarfs],),
     ([Dwarfs],),
   ),
   intro: [
@@ -34,9 +34,10 @@
   - One magic item worth a maximum of 25 points
 
   The Dwarf army must include *The Hunter* as its general, and at least one
-  unit of Troll Slayers. The Chaos Dwarf and Ogre army includes *The Bait*,
-  an allied model who costs no points and is added on top of its 1,500
-  points.
+  unit of Slayers.
+
+  *The Bait* is an Ogre and counts as allied to the Chaos Dwarfs. He does not
+  have a cost.
 
   #special-rule[The Hunter][
     Skorri Bloodaxe is a Daemon Slayer and the general of the Dwarf army. He
@@ -76,7 +77,7 @@
       columns: 11,
       align: center,
       table.header[Bruiser][M][WS][BS][S][T][W][I][A][Ld][Points],
-      [Gorgut Skullchewer], [6], [5], [4], [5], [5], [4], [4], [5], [8], [0],
+      [Gorgut Skullchewer], [6], [5], [4], [5], [5], [4], [4], [5], [8], [-],
     )
 
     *Troop type:* Monstrous Infantry (Character, Ogre).
