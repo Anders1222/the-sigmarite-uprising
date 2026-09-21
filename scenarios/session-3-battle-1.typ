@@ -88,9 +88,7 @@
   The battle lasts six turns.
 ]
 
-#victory(draft: true)[
-  There are three objectives, each worth 1 Victory Point.
-
+#section("Objectives", accent: ember, draft: true)[
   #special-rule[I · A Slayer's Death][
     The Chaos Dwarfs and Ogres score this objective if *The Hunter* is dead at
     the end of the battle.
@@ -115,15 +113,6 @@
 
     If both sides have equal Unit Strength, neither side scores.
   ]
-
-  #table(
-    columns: (auto, 1fr),
-    align: (center, left),
-    table.header[Objectives][Result],
-    [3 to 0], [Decisive Victory],
-    [2 to 1], [Victory],
-    [1 to 1 or 0 to 0], [Draw],
-  )
 ]
 
 #special-rules(draft: true)[
