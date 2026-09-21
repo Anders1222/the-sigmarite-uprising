@@ -126,7 +126,7 @@
   ]
 ]
 
-#game-length(draft: true)[
+#game-length[
   The battle lasts six turns.
 ]
 
