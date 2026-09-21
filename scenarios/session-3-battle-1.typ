@@ -42,10 +42,7 @@
   #special-rule[The Hunter][
     Skorri Bloodaxe is a Daemon Slayer and the general of the Dwarf army. He
     has hunted the Ogre tribes of the Dark Lands for weeks and has sworn to
-    take another champion's head before he finds his own doom. He costs
-    *175 points*, counted against the army's 1,500 points and its hero budget
-    as normal. He is a Lord choice, allowed in this scenario despite the
-    Heroes-only campaign rule.
+    take another champion's head before he finds his own doom.
 
     #table(
       columns: 11,
