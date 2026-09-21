@@ -30,8 +30,8 @@
   The Dwarf army must include one Slayer character, designated *The Hunter*.
 
   The Chaos Dwarf and Ogre army includes *The Bait*: Gorgut Skullchewer, an
-  Ogre Bruiser. He costs no points and is added to the army on top of its
-  1,500 points. See *The Bait* under Special Rules.
+  Ogre Bruiser. He is an allied model, costs no points and is added to the
+  army on top of its 1,500 points. See *The Bait* under Special Rules.
 
   Campaign list rules apply:
   - "Heroes" only
@@ -119,8 +119,9 @@
 #special-rules(draft: true)[
   #special-rule[The Bait][
     Gorgut Skullchewer is an Ogre Bruiser, a champion of his tribe with a
-    string of dead rivals behind him. He costs no points and is not counted
-    against the army's 1,500 points or its hero budget.
+    string of dead rivals behind him. He is an allied model: he costs no
+    points and is not counted against the army's 1,500 points or its hero
+    budget, and the usual rules for allies apply to him.
 
     #table(
       columns: 10,
