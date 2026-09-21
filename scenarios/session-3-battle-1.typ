@@ -148,16 +148,6 @@
 
 #aftermath(draft: true)[
   #special-rule[Campaign Consequences][
-    The three objectives are recorded separately as well as the overall
-    result.
-
-    - *A Slayer's Death* records whether the Chaos Dwarfs delivered the
-      vengeance promised to the Ogres.
-    - *The Ogre Champion* records whether the Chaos Dwarfs were able to
-      protect their new allies.
-    - *Hold the Killing Ground* records which side controlled the battlefield
-      once the ambush was done.
-
     The more objectives the Chaos Dwarfs secure, the more willing the Ogre
     tribe will be to enter an alliance with them. For *each objective* the
     Chaos Dwarfs secure, they gain *100 points of Ogre allies* in the final
