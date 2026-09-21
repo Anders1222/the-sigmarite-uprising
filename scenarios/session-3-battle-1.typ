@@ -105,21 +105,25 @@
 ]
 
 #deployment(draft: true)[
-  The Dwarf army deploys within 12" of one short table edge.
+  The Dwarf army deploys within 18" of its short table edge, the Dwarf edge
+  on the map.
 
   *The Bait* and up to 300 points of Ogre troops deploy within 8" of the
-  centre of the battlefield.
+  centre of the Ogre camp, 24" from the Chaos Dwarf table edge.
 
   The remainder of the Chaos Dwarf and Ogre army begins in reserve.
 
   Before the Dwarfs deploy, the Chaos Dwarf player secretly assigns every
-  reserve unit to one of:
+  reserve unit to one of three entry points, named as seen from the Chaos
+  Dwarf table edge:
 
-  - Left Flank
-  - Right Flank
-  - Chaos Dwarf Table Edge, the short edge opposite the Dwarfs
+  - Left Flank: the long edge, anywhere between the Dwarf deployment zone
+    and the Chaos Dwarf corner
+  - Right Flank: the other long edge, likewise
+  - Chaos Dwarf Table Edge: the short edge opposite the Dwarfs
 
-  Write the assignments down. They are revealed as the units arrive.
+  The flank windows are 54" wide and are marked on the map. Write the
+  assignments down. They are revealed as the units arrive.
 ]
 
 #first-turn(draft: true)[
@@ -175,8 +179,9 @@
       [Turn 4], [Automatic],
     )
 
-    Units arrive from their assigned table edge. Units entering from a flank
-    must enter from the middle 24" of that edge.
+    Units arrive from their assigned entry point. Units entering from a
+    flank may enter anywhere along that flank's window, between the Dwarf
+    deployment zone and the Chaos Dwarf corner.
 
     An arriving unit may move normally, but may not charge during the turn it
     arrives.
