@@ -1,7 +1,7 @@
 #import "../scenarios/template.typ": *
 
 #show: scenario.with(
-  title: [The First Battle],
+  title: [Slay the Masters],
   round: [Prologue · Battle Report],
   sides: (
     ([Chaos Dwarfs], [The Slavers]),
