@@ -180,9 +180,8 @@
       columns: (auto, 1fr),
       align: (center, left),
       table.header[Turn][Arrives on],
-      [Turn 2], [4+],
-      [Turn 3], [3+],
-      [Turn 4], [Automatic],
+      [Turn 2], [3+],
+      [Turn 3], [Automatic],
     )
 
     Units arrive from their assigned entry point. Units entering from a
