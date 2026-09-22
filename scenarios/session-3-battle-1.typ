@@ -65,7 +65,7 @@
   ]
 
   #special-rule[The Bait][
-    Gorgut Skullchewer is an Ogre Bruiser, a champion of his tribe with a
+    Morglum Steelgut is an Ogre Bruiser, a champion of his tribe with a
     string of dead rivals behind him. He is an allied model: he costs no
     points and is not counted against the army's 1,500 points or its hero
     budget, and the usual rules for allies apply to him.
@@ -74,7 +74,7 @@
       columns: 11,
       align: center,
       table.header[Bruiser][M][WS][BS][S][T][W][I][A][Ld][Points],
-      [Gorgut Skullchewer], [6], [5], [4], [5], [5], [4], [4], [5], [8], [-],
+      [Morglum Steelgut], [6], [5], [4], [5], [5], [4], [4], [5], [8], [-],
     )
 
     *Troop type:* Monstrous Infantry (Character, Ogre).
@@ -137,11 +137,8 @@
 ]
 
 #first-turn[
-  #to-be-decided[
-    Who takes the first turn is not yet settled. The reserve rolls assume the
-    Chaos Dwarfs have a Turn 1 in which nothing arrives, so the Dwarfs
-    advancing first fits the story. The group decides at the table.
-  ]
+  The Dwarfs take the first turn. The Slayer advances on the camp before the
+  trap is sprung.
 ]
 
 #game-length[
