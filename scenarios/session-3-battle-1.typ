@@ -118,8 +118,8 @@
   The Dwarf army deploys within 18" of its short table edge, the Dwarf edge
   on the map.
 
-  *The Bait* deploys within 8" of the centre of the Ogre camp, 24" from the
-  Chaos Dwarf table edge. He may start inside the building.
+  *The Bait* deploys inside the building at the centre of the Ogre camp, 24"
+  from the Chaos Dwarf table edge.
 
   The remainder of the Chaos Dwarf and Ogre army begins in reserve.
 
@@ -193,12 +193,22 @@
   ]
 
   #special-rule[The Slayer Takes the Bait][
+    *The Hunter* has sworn to take the champion's head. In the Remaining
+    Moves sub-phase he must move at his full rate, marching if he is able,
+    by the shortest route toward *The Bait*. If he has joined a unit, that
+    unit moves with him.
+
     If *The Hunter* can declare a legal charge against *The Bait*, he must do
     so.
 
     Once *The Hunter* has fought at least one round of close combat against
-    *The Bait*, this restriction ends: the trap has been revealed, and the
+    *The Bait*, these restrictions end: the trap has been revealed, and the
     Dwarf player may use him normally.
+  ]
+
+  #special-rule[The Bait Holds His Lodge][
+    *The Bait* may not leave the building he starts in. He must stay inside
+    it for the whole battle, and fights any assault on it from within.
   ]
 ]
 

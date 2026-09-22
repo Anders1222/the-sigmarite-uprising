@@ -48,7 +48,6 @@
 #let camp-x = 48
 #let camp-y = 24
 #let score-r = 6
-#let bait-r = 8
 
 // The Dwarfs deploy within 18" of their edge. Reserves enter from a 54"
 // window on each long edge, running from the Dwarf deployment zone to the
@@ -196,13 +195,10 @@
 #terrain(ruin-piece, 63, 28, 6, 5)[ruins]
 #terrain(rock-piece, 63, 9, 6, 5)[rock spur]
 
-// The camp: The Bait's 8" deployment circle, the 6" scoring zone and the
-// camp itself around the marked centre.
-#place(dx: px(camp-x) - bait-r * u, dy: py(camp-y) - bait-r * u,
-  circle(radius: bait-r * u, fill: bait-zone,
-    stroke: (paint: gold, thickness: 1pt, dash: (array: (4pt, 2.5pt)))))
+// The camp: the 6" scoring zone and the camp itself around the marked
+// centre, where The Bait starts inside the building.
 #place(dx: px(camp-x) - score-r * u, dy: py(camp-y) - score-r * u,
-  circle(radius: score-r * u, fill: none,
+  circle(radius: score-r * u, fill: bait-zone,
     stroke: (paint: ember, thickness: 1.5pt, dash: (array: (6pt, 3.5pt)))))
 #place(dx: px(camp-x) - 3.2 * u, dy: py(camp-y) - 3.2 * u,
   circle(radius: 3.2 * u, fill: camp-fill, stroke: 0.7pt + iron))
@@ -217,9 +213,6 @@
 #place(dx: px(camp-x - 5) - 18 * u, dy: py(camp-y + 9),
   box(width: 18 * u, align(right, text(size: 7.1pt, fill: ember,
     [6″ · Hold the Killing Ground]))))
-#place(dx: px(camp-x - 0.9) - 18 * u, dy: py(camp-y - 10.5),
-  box(width: 18 * u, align(right, text(size: 7.1pt, fill: gold,
-    [8″ · The Bait #linebreak() deploys within]))))
 
 // Walking distances: the Dwarf line to the scoring zone, and each reserve
 // entry to the scoring zone.
@@ -249,6 +242,6 @@
     #swatch(align(horizon, circle(radius: 4pt, fill: bait-zone,
       stroke: (paint: ember, thickness: 1pt, dash: (array: (2pt, 1.5pt))))))
     #h(3pt) The camp, 24″ from the Chaos Dwarf edge, with a building at its
-    centre: The Bait deploys within 8″, the 6″ ring is the objective.
+    centre: The Bait starts inside it, the 6″ ring is the objective.
   ],
 )))
