@@ -3,6 +3,7 @@
 #show: scenario.with(
   title: [The Slayer Bait],
   round: [Session 3 · Battle One],
+  art: "art/session-3-battle-1.png",
   sides: (
     ([Chaos Dwarfs],),
     ([Dwarfs],),
