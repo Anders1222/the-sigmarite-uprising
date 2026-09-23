@@ -11,31 +11,32 @@
   intro: [
     #text(weight: 700, style: "normal", fill: iron)[From the journal of Zhaitrak the Meat Merchant:]
 
-    The sentries were right about the treeline, and I have docked them
-    another day's rations for it. The lizards came out of the jungle from
-    every side at once. The pens are kindling, the finest stock I ever held
-    is gone back into the trees, and word of the loss is already climbing the
-    ziggurat.
+    The lizards came out of the jungle from every side at once. The pens are
+    kindling, the finest stock I ever held is gone back into the trees, and
+    word of the loss is already climbing the ziggurat. Luckily, Zhorak
+    Coalheart was seen fleeing as the battle began, and I have pinned the
+    whole fiasco on him. He does not know it yet, but I have already arranged
+    his enlistment in the Infernal Guard.
 
-    Losses must be recovered, and I know where muscle comes cheap. The Ogre
-    tribes of the Dark Lands will haul a siege train for the price of what
-    they eat on the way. Yet the tribes will not talk trade while a Dwarf
-    Slayer out of the western holds, one Skorri Bloodaxe, hunts them. Several
-    of their champions have already fallen to his axe, and he has sworn to
-    take another.
+    Furthermore, the slaves have escaped the lower levels, and I do not know
+    how. Rumour has them roaming the countryside, raiding slave farms and
+    swelling their ranks. So much for nowhere to go.
+
+    The orc slaves have proved worthless, but their bodies may yet be of use.
+    Ogres will haul a siege train for the price of what they eat on the way,
+    and are not particular about the menu. Yet they will not trade while a
+    Dwarf Slayer, Skorri Bloodaxe, hunts their champions. Several have
+    fallen, and he has sworn to take another.
 
     So I offered them his head, for an alliance. It needed only a little
     bait, and a little persuasion. I told their chief, Morglum Steelgut, that
     a Slayer seeks only the mightiest foe, and that no lesser Ogre could ever
-    draw him out. By the second haunch he was demanding the honour for
-    himself. He now sits alone in his lodge, apparently cut off from the rest
-    of the tribe. He must, of course, survive the evening. A dead chief signs
-    no contracts.
+    draw him out. He now sits alone in his lodge, apparently cut off from the
+    rest of the tribe.
 
-    Tonight my scouts report that the Slayer has taken the bait. Beyond the
-    rocks, my warriors and the rest of the tribe wait for my signal. A
-    customer who wishes to die is the easiest sale I will ever make. I need
-    only arrange the delivery.
+    The Slayer has taken the bait. Beyond the rocks, my warriors and the
+    tribe await my signal. A customer who wishes to die is the easiest sale I
+    will ever make: I need only arrange the delivery.
   ],
 )
 
@@ -77,7 +78,7 @@
   ]
 
   #special-rule[Morglum Steelgut][
-    Morglum Steelgut is an Ogre Bruiser, a champion of his tribe with a
+    Morglum Steelgut is an Ogre Bruiser and the chief of his tribe, with a
     string of dead rivals behind him. He is an allied model: he costs no
     points and is not counted against the army's 1,500 points or its hero
     budget. The usual rules for allies apply to him.
@@ -150,7 +151,7 @@
     dead at the end of the battle.
   ]
 
-  #special-rule[II · The Ogre Champion][
+  #special-rule[II · The Ogre Chief][
     The Chaos Dwarfs and Ogres score this objective if *Morglum Steelgut* is
     alive at the end of the battle.
   ]
@@ -186,7 +187,7 @@
   ]
 
   #special-rule[The Slayer Takes the Bait][
-    *Skorri Bloodaxe* has sworn to take the champion's head. If he can
+    *Skorri Bloodaxe* has sworn to take the chief's head. If he can
     declare a legal charge against *Morglum Steelgut*, he must do so.
 
     In the Remaining Moves sub-phase he must move at his full rate, marching
