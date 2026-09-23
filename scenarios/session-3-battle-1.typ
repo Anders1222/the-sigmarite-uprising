@@ -8,19 +8,33 @@
     ([Dwarfs],),
   ),
   intro: [
-    A notorious Dwarf Slayer has spent weeks hunting the Ogre tribes of the
-    Dark Lands. Several Ogre champions have already fallen to his axe, and now
-    he has sworn to kill another.
+    #text(weight: 700, style: "normal", fill: iron)[From the journal of Zhaitrak the Meat Merchant:]
 
-    The Chaos Dwarfs see an opportunity. Seeking an alliance with the Ogres,
-    they offer to help destroy the troublesome Slayer. An Ogre champion and a
-    small warband are deliberately left exposed, apparently separated from the
-    rest of the tribe.
+    The sentries were right about the treeline, and I have docked them
+    another day's rations for it. The lizards came out of the jungle from
+    every side at once. The pens are kindling, the finest stock I ever held
+    is gone back into the trees, and word of the loss is already climbing the
+    ziggurat.
 
-    The Slayer takes the bait.
+    Losses must be recovered, and I know where muscle comes cheap. The Ogre
+    tribes of the Dark Lands will haul a siege train for the price of what
+    they eat on the way. Yet the tribes will not talk trade while a Dwarf
+    Slayer out of the western holds, one Skorri Bloodaxe, hunts them. Several
+    of their champions have already fallen to his axe, and he has sworn to
+    take another.
 
-    But hidden beyond the rocks, the Chaos Dwarfs and the rest of the Ogre
-    warband wait for the signal to close the trap.
+    So I offered them his head, for an alliance. It needed only a little
+    bait, and a little persuasion. I told their chief, Morglum Steelgut, that
+    a Slayer seeks only the mightiest foe, and that no lesser Ogre could ever
+    draw him out. By the second haunch he was demanding the honour for
+    himself. He now sits alone in his lodge, apparently cut off from the rest
+    of the tribe. He must, of course, survive the evening. A dead chief signs
+    no contracts.
+
+    Tonight my scouts report that the Slayer has taken the bait. Beyond the
+    rocks, my warriors and the rest of the tribe wait for my signal. A
+    customer who wishes to die is the easiest sale I will ever make. I need
+    only arrange the delivery.
   ],
 )
 
@@ -53,7 +67,7 @@
 
     *Troop type:* Infantry (Character, Dwarf).
 
-    *Equipment:* great weapon, Wards of Grimnir.
+    *Equipment:* great weapon.
 
     *Special rules:* Ancestral Grudge, Daemon Slayer, Deathblow, Dragon
     Slayer, Magic Resistance (1), Relentless, Unbreakable.
