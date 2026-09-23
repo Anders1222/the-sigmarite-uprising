@@ -196,7 +196,7 @@
 #terrain(rock-piece, 63, 9, 6, 5)[rock spur]
 
 // The camp: the 6" scoring zone and the camp itself around the marked
-// centre, where The Bait starts inside the building.
+// centre, where Morglum Steelgut starts inside the building.
 #place(dx: px(camp-x) - score-r * u, dy: py(camp-y) - score-r * u,
   circle(radius: score-r * u, fill: bait-zone,
     stroke: (paint: ember, thickness: 1.5pt, dash: (array: (6pt, 3.5pt)))))
@@ -242,6 +242,6 @@
     #swatch(align(horizon, circle(radius: 4pt, fill: bait-zone,
       stroke: (paint: ember, thickness: 1pt, dash: (array: (2pt, 1.5pt))))))
     #h(3pt) The camp, 24″ from the Chaos Dwarf edge, with a building at its
-    centre: The Bait starts inside it, the 6″ ring is the objective.
+    centre: Morglum Steelgut starts inside it, the 6″ ring is the objective.
   ],
 )))

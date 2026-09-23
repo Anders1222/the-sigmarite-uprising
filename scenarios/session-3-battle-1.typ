@@ -33,13 +33,13 @@
   - Hero budget: 350 points
   - One magic item worth a maximum of 25 points
 
-  The Dwarf army must include *The Hunter* as its general, and at least one
-  unit of Slayers.
+  The Dwarf army must include *Skorri Bloodaxe* as its general, and at least
+  one unit of Slayers.
 
-  *The Bait* is an Ogre and counts as allied to the Chaos Dwarfs. He does not
-  have a cost.
+  *Morglum Steelgut* is an Ogre and counts as allied to the Chaos Dwarfs. He
+  does not have a cost.
 
-  #special-rule[The Hunter][
+  #special-rule[Skorri Bloodaxe][
     Skorri Bloodaxe is a Daemon Slayer and the general of the Dwarf army. He
     has hunted the Ogre tribes of the Dark Lands for weeks and has sworn to
     take another champion's head before he finds his own doom.
@@ -64,7 +64,7 @@
     He may take no further upgrades, magic items or runic items.
   ]
 
-  #special-rule[The Bait][
+  #special-rule[Morglum Steelgut][
     Morglum Steelgut is an Ogre Bruiser, a champion of his tribe with a
     string of dead rivals behind him. He is an allied model: he costs no
     points and is not counted against the army's 1,500 points or its hero
@@ -95,8 +95,8 @@
   stands at that centre, a stone hall, an Ogre lodge or a ruined tower, and
   the centre of the building is the centre of the camp, from which every
   distance is measured. It follows the normal rules for buildings: it blocks
-  line of sight and gives *The Bait* somewhere to shelter from the Dwarf war
-  machines until the Slayer reaches him.
+  line of sight and gives *Morglum Steelgut* somewhere to shelter from the
+  Dwarf war machines until the Slayer reaches him.
 
   The rest of the terrain is laid out as shown on the map, each piece placed
   by its centre. The pieces themselves are whatever the collection holds:
@@ -118,8 +118,8 @@
   The Dwarf army deploys within 18" of its short table edge, the Dwarf edge
   on the map.
 
-  *The Bait* deploys inside the building at the centre of the Ogre camp, 24"
-  from the Chaos Dwarf table edge.
+  *Morglum Steelgut* deploys inside the building at the centre of the Ogre
+  camp, 24" from the Chaos Dwarf table edge.
 
   The remainder of the Chaos Dwarf and Ogre army begins in reserve.
 
@@ -147,18 +147,19 @@
 
 #section("Objectives", accent: ember)[
   #special-rule[I · A Slayer's Death][
-    The Chaos Dwarfs and Ogres score this objective if *The Hunter* is dead at
-    the end of the battle.
+    The Chaos Dwarfs and Ogres score this objective if *Skorri Bloodaxe* is
+    dead at the end of the battle.
 
-    The Dwarfs score it if *The Hunter* is alive at the end of the battle.
+    The Dwarfs score it if *Skorri Bloodaxe* is alive at the end of the
+    battle.
   ]
 
   #special-rule[II · The Ogre Champion][
-    The Dwarfs score this objective if *The Bait* is dead at the end of the
-    battle.
+    The Dwarfs score this objective if *Morglum Steelgut* is dead at the end
+    of the battle.
 
-    The Chaos Dwarfs and Ogres score it if *The Bait* is alive at the end of
-    the battle.
+    The Chaos Dwarfs and Ogres score it if *Morglum Steelgut* is alive at the
+    end of the battle.
   ]
 
   #special-rule[III · Hold the Killing Ground][
@@ -193,22 +194,22 @@
   ]
 
   #special-rule[The Slayer Takes the Bait][
-    *The Hunter* has sworn to take the champion's head. In the Remaining
+    *Skorri Bloodaxe* has sworn to take the champion's head. In the Remaining
     Moves sub-phase he must move at his full rate, marching if he is able,
-    by the shortest route toward *The Bait*. If he has joined a unit, that
-    unit moves with him.
+    by the shortest route toward *Morglum Steelgut*. If he has joined a unit,
+    that unit moves with him.
 
-    If *The Hunter* can declare a legal charge against *The Bait*, he must do
-    so.
+    If *Skorri Bloodaxe* can declare a legal charge against *Morglum
+    Steelgut*, he must do so.
 
-    Once *The Hunter* has fought at least one round of close combat against
-    *The Bait*, these restrictions end: the trap has been revealed, and the
-    Dwarf player may use him normally.
+    Once *Skorri Bloodaxe* has fought at least one round of close combat
+    against *Morglum Steelgut*, these restrictions end: the trap has been
+    revealed, and the Dwarf player may use him normally.
   ]
 
-  #special-rule[The Bait Holds His Lodge][
-    *The Bait* may not leave the building he starts in. He must stay inside
-    it for the whole battle, and fights any assault on it from within.
+  #special-rule[Morglum Holds His Lodge][
+    *Morglum Steelgut* may not leave the building he starts in. He must stay
+    inside it for the whole battle, and fights any assault on it from within.
   ]
 ]
 
