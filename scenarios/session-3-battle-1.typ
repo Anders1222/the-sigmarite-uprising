@@ -211,6 +211,9 @@
   #special-rule[Morglum Holds His Lodge][
     *Morglum Steelgut* may not leave the building he starts in. He must stay
     inside it for the whole battle.
+
+    The camp is built around a ruined building, so artillery fire has no
+    effect on the building or the units inside it.
   ]
 ]
 
