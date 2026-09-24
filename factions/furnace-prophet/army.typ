@@ -77,7 +77,7 @@
   equipment: (
     magic-item([Rostbringer], kind: [Halberd])[
       Wizard only. The wielder gains +1 Strength, +1 Toughness and +1
-      Attack, and has the Terror special rule against Goblins. In addition,
+      Attack. In addition,
       if the wielder successfully hits an enemy unit in close combat, that
       unit suffers -1 to its armour saves for the rest of the game. This is
       not cumulative.
