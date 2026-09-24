@@ -135,6 +135,8 @@
 
   The flank windows are 54" wide and are marked on the map. Write the
   assignments down. They are revealed as the units arrive.
+
+  The Dwarf player cannot deploy units as Scouts.
 ]
 
 #first-turn[
@@ -202,6 +204,8 @@
 
     If possible, *Skorri Bloodaxe* must fight or declare a challenge against
     *Morglum Steelgut*.
+
+    This rule remains in play for as long as *Morglum Steelgut* is alive.
   ]
 
   #special-rule[Morglum Holds His Lodge][
