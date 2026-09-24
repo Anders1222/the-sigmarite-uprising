@@ -198,7 +198,8 @@
 
     If the direct path takes him into contact with an enemy unit, move
     *Skorri Bloodaxe* (and his unit) until contact is achieved, then stop.
-    *Skorri Bloodaxe* and his unit count as having charged.
+    *Skorri Bloodaxe* and his unit count as having charged. The enemy unit
+    does not get a charge reaction.
 
     Resolve the combat normally.
 
