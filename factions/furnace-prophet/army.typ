@@ -38,6 +38,12 @@
   profile: (4, 4, 3, 4, 4, 2, 4, 2, 8),
   equipment: (
     [Hand weapon], [Shield],
+    magic-item([The Mace of Helsturm], kind: [Magic weapon])[
+      Great weapon. The wielder of this weapon gains the Flaming Attacks
+      special rule. In addition, each natural roll of 6 to hit causes that
+      attack to be resolved at Strength 10 and with the Multiple Wounds (D3)
+      special rule.
+    ],
     magic-item([The Armour of Meteoric Iron], kind: [Magic armour])[
       Heavy armour. The Armour of Meteoric Iron grants the wearer +2
       armour save and the Magical Ward (6+) special rule.
@@ -75,6 +81,11 @@
       if the wielder successfully hits an enemy unit in close combat, that
       unit suffers -1 to its armour saves for the rest of the game. This is
       not cumulative.
+    ],
+    magic-item([Armour of Tarnus], kind: [Magic armour])[
+      Light armour. The Armour of Tarnus gives the wearer the Magical Ward
+      (5+) special rule. This item may be taken by Wizards despite them
+      normally not being allowed to take armour.
     ],
   ),
   special-rules: ([Level 2 Wizard, Lore of Metal],),
