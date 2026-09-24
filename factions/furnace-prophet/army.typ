@@ -28,7 +28,7 @@
     to lead and snapped when the wind of Chamon awoke in him.
 
     They fight because the pens are still full and the furnaces still burn.
-    The Tempered are free and they intend to make freedom permanent.
+    The Tempered are free, and they intend to make freedom permanent.
   ],
 )
 
@@ -38,9 +38,15 @@
   profile: (4, 4, 3, 4, 4, 2, 4, 2, 8),
   equipment: (
     [Hand weapon], [Shield],
+    magic-item([The Mace of Helsturm], kind: [Magic weapon])[
+      Great weapon. The wielder of this weapon gains the Flaming Attacks
+      special rule. In addition, each natural roll of 6 to hit causes that
+      attack to be resolved at Strength 10 and with the Multiple Wounds (D3)
+      special rule.
+    ],
     magic-item([The Armour of Meteoric Iron], kind: [Magic armour])[
-      Heavy armour. The Armour of Meteoric Iron grants the wearer +2
-      armour save and the Magical Ward (6+) special rule.
+      Heavy armour. The Armour of Meteoric Iron grants the wearer +2 to
+      their armour save and the Magical Ward (6+) special rule.
     ],
     magic-item([Ring of St. Horst], kind: [Enchanted item])[
       Sigmarite only. The model carrying the Ring of St. Horst and any unit
@@ -58,7 +64,7 @@
     [Hand weapon], [Repeater handgun], [Heavy armour], [Shield],
     magic-item([Orb of Ptra], kind: [Enchanted item])[
       All missile attacks targeting the bearer of this item or any unit
-      they are with suffer -1 To Hit.
+      they have joined suffer -1 to hit.
     ],
   ),
   special-rules: ([Hold the Line], [Battle Standard Bearer]),
@@ -71,15 +77,19 @@
   equipment: (
     magic-item([Rostbringer], kind: [Halberd])[
       Wizard only. The wielder gains +1 Strength, +1 Toughness and +1
-      Attack, and has the Terror special rule against Goblins. In addition,
-      if the wielder successfully hits an enemy unit in close combat, that
-      unit suffers -1 to its armour saves for the rest of the game. This is
-      not cumulative.
+      Attack. In addition, if the wielder successfully hits an enemy unit in
+      close combat, that unit suffers -1 to its armour saves for the rest of
+      the game. This penalty is not cumulative.
+    ],
+    magic-item([Armour of Tarnus], kind: [Magic armour])[
+      Light armour. The Armour of Tarnus gives the wearer the Magical Ward
+      (5+) special rule. This item may be taken by Wizards, even though they
+      are normally not allowed to take armour.
     ],
   ),
   special-rules: ([Level 2 Wizard, Lore of Metal],),
   wounds: [
-    _Shell shocked:_ If Emmerich was hit by artillery in the previous turn,
+    _Shell-shocked:_ If Emmerich was hit by artillery in the previous turn,
     at the start of the magic phase he must pass a Leadership test on his
     own unmodified Leadership. If he fails, he cannot channel.
   ],
