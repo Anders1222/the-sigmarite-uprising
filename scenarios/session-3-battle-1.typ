@@ -181,11 +181,10 @@
     )
 
     Units arrive from their assigned entry point. Units entering from a
-    flank may enter anywhere along that flank's window, between the Dwarf
-    deployment zone and the Chaos Dwarf corner. Their rear rank must touch
-    the table edge.
+    flank may enter anywhere along that flank's window. Their rear rank
+    must touch the table edge.
 
-    An arriving unit may move and charge as normal in the turn it arrives.
+    Otherwise, an arriving unit follows the rules for reinforcements.
   ]
 
   #special-rule[The Slayer Takes the Bait][
