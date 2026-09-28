@@ -189,24 +189,24 @@
   ]
 
   #special-rule[The Slayer Takes the Bait][
-    *Skorri Bloodaxe* has sworn to take the chief's head. If he can
-    declare a legal charge against *Morglum Steelgut*, he must do so.
+    *Skorri Bloodaxe* has sworn to take the chief's head. For as long as
+    *Morglum Steelgut* is alive, he is bound by his oath.
 
-    In the Remaining Moves sub-phase he must move at his full rate, marching
-    if he is able, by the shortest route toward *Morglum Steelgut*. If he has
-    joined a unit, that unit moves with him.
+    *Charges:* If he can declare a legal charge against *Morglum Steelgut*,
+    he must do so.
 
-    If the direct path takes him into contact with an enemy unit, move
-    *Skorri Bloodaxe* (and his unit) until contact is achieved, then stop.
-    *Skorri Bloodaxe* and his unit count as having charged. The enemy unit
-    does not get a charge reaction.
+    *Remaining Moves:* Unless he or his unit is engaged in combat, he must
+    move at his full rate by the shortest route toward *Morglum Steelgut*,
+    marching if he is able. If he has joined a unit, that unit moves with
+    him.
 
-    Resolve the combat normally.
+    *Blocked path:* If that route brings him into contact with an enemy
+    unit, move him and his unit until contact is made, wheel them to align
+    with the enemy unit, then stop. They count as having charged, and the
+    enemy unit does not get a charge reaction. Resolve the combat normally.
 
-    If possible, *Skorri Bloodaxe* must fight or declare a challenge against
-    *Morglum Steelgut*.
-
-    This rule remains in play for as long as *Morglum Steelgut* is alive.
+    *Close combat:* If possible, he must fight *Morglum Steelgut* or declare
+    a challenge against him.
   ]
 
   #special-rule[Morglum Holds His Lodge][
