@@ -197,16 +197,16 @@
 
     *Remaining Moves:* Unless he or his unit is engaged in combat, he must
     move at his full rate by the shortest route toward *Morglum Steelgut*,
-    marching if he is able. If he has joined a unit, that unit moves with
-    him.
+    marching if he is able. If he has joined a unit, that unit gets a free
+    reform, then moves with him.
 
     *Blocked path:* If that route brings him into contact with an enemy
     unit, move him and his unit until contact is made, wheel them to align
     with the enemy unit, then stop. They count as having charged, and the
     enemy unit does not get a charge reaction. Resolve the combat normally.
 
-    *Close combat:* If possible, he must fight *Morglum Steelgut* or declare
-    a challenge against him.
+    *Close combat:* If possible, he must declare a challenge against
+    *Morglum Steelgut*.
   ]
 
   #special-rule[Morglum Holds His Lodge][
