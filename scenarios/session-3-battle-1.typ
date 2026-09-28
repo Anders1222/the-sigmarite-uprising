@@ -181,40 +181,39 @@
     )
 
     Units arrive from their assigned entry point. Units entering from a
-    flank may enter anywhere along that flank's window, between the Dwarf
-    deployment zone and the Chaos Dwarf corner. Their rear rank must touch
-    the table edge.
+    flank may enter anywhere along that flank's window. Their rear rank
+    must touch the table edge.
 
-    An arriving unit may move and charge as normal in the turn it arrives.
+    Otherwise, an arriving unit follows the rules for reinforcements.
   ]
 
   #special-rule[The Slayer Takes the Bait][
-    *Skorri Bloodaxe* has sworn to take the chief's head. If he can
-    declare a legal charge against *Morglum Steelgut*, he must do so.
+    *Skorri Bloodaxe* has sworn to take the chief's head. For as long as
+    *Morglum Steelgut* is alive, he is bound by his oath.
 
-    In the Remaining Moves sub-phase he must move at his full rate, marching
-    if he is able, by the shortest route toward *Morglum Steelgut*. If he has
-    joined a unit, that unit moves with him.
+    *Charges:* If he can declare a legal charge against *Morglum Steelgut*,
+    he must do so.
 
-    If the direct path takes him into contact with an enemy unit, move
-    *Skorri Bloodaxe* (and his unit) until contact is achieved, then stop.
-    *Skorri Bloodaxe* and his unit count as having charged. The enemy unit
-    does not get a charge reaction.
+    *Remaining Moves:* Unless he or his unit is engaged in combat, he must
+    move at his full rate by the shortest route toward *Morglum Steelgut*,
+    marching if he is able. If he has joined a unit, that unit gets a free
+    reform, then moves with him.
 
-    Resolve the combat normally.
+    *Blocked path:* If that route brings him into contact with an enemy
+    unit, move him and his unit until contact is made, wheel them to align
+    with the enemy unit, then stop. They count as having charged, and the
+    enemy unit does not get a charge reaction. Resolve the combat normally.
 
-    If possible, *Skorri Bloodaxe* must fight or declare a challenge against
+    *Close combat:* If possible, he must declare a challenge against
     *Morglum Steelgut*.
-
-    This rule remains in play for as long as *Morglum Steelgut* is alive.
   ]
 
   #special-rule[Morglum Holds His Lodge][
     *Morglum Steelgut* may not leave the building he starts in. He must stay
     inside it for the whole battle.
 
-    The camp is built around a ruined building, so artillery fire has no
-    effect on the building or the units inside it.
+    The camp is built around a ruined building, so artillery and template
+    attacks have no effect on the building or the units inside it.
   ]
 ]
 
