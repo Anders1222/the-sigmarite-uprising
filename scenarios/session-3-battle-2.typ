@@ -3,6 +3,7 @@
 #show: scenario.with(
   title: [Of Military Ground Snakes and Men],
   round: [Session 3 · Battle Two],
+  art: "art/session-3-battle-2.png",
   sides: (
     ([The Empire],),
     ([Lizardmen],),
