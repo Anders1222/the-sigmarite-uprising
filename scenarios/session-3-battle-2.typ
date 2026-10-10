@@ -26,7 +26,7 @@
   ],
 )
 
-#armies(draft: true)[
+#armies[
   *1,700 points* per side: the Empire against Lizardmen.
 
   The Lizardmen army may take up to *150 points* of magic items on top of
@@ -63,7 +63,7 @@
   ]
 ]
 
-#battlefield(draft: true)[
+#battlefield[
   The table is 6 by 4 feet, 72" by 48". The Empire has one long edge, the
   Lizardmen the other.
 
@@ -79,7 +79,7 @@
   )
 ]
 
-#deployment(draft: true)[
+#deployment[
   Follow the standard rules for deployment, using the zones on the map.
 
   The Empire deploys in the two corners of its table edge. Each zone is the
@@ -93,16 +93,16 @@
   Ancient Tablets may not be deployed as Scouts or Ambushers.
 ]
 
-#first-turn(draft: true)[
+#first-turn[
   Follow the standard rules for first turn.
 ]
 
-#game-length(draft: true)[
+#game-length[
   The battle lasts six turns, or until all Ancient Tablets have escaped,
   whichever comes first.
 ]
 
-#special-rules(draft: true)[
+#special-rules[
   #special-rule[Precious Cargo][
     An Ancient Tablet, and any unit it joins, has the Stubborn special rule.
     If the unit it joins has a Blessed Spawning, the Ancient Tablet
@@ -153,7 +153,7 @@
   ]
 ]
 
-#aftermath(draft: true)[
+#aftermath[
   #special-rule[Campaign Consequences][
     The tablets the Empire claims buy it Lizardmen allies in the final
     battle of the campaign. At the end of the battle, the Empire gains:
