@@ -36,6 +36,7 @@
   [Sigwald "Furnace Prophet" Eisenfaust],
   unit-type: [Warrior Priest of Sigmar],
   profile: (4, 4, 3, 4, 4, 2, 4, 2, 8),
+  points: 133,
   equipment: (
     [Hand weapon], [Shield],
     magic-item([The Mace of Helsturm], kind: [Magic weapon])[
@@ -60,6 +61,7 @@
   [Bruno "Chainbreaker" Steinhauer],
   unit-type: [Captain],
   profile: (4, 5, 5, 4, 4, 2, 5, 3, 8),
+  points: 112,
   equipment: (
     [Hand weapon], [Repeater handgun], [Heavy armour], [Shield],
     magic-item([Orb of Ptra], kind: [Enchanted item])[
@@ -74,6 +76,7 @@
   [Emmerich Goldhand],
   unit-type: [Battle Wizard],
   profile: (4, 3, 3, 3, 3, 2, 3, 1, 7),
+  points: 100,
   equipment: (
     magic-item([Rustbringer], kind: [Halberd])[
       Wizard only. The wielder gains +1 Strength, +1 Toughness and +1
