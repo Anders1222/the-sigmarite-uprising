@@ -75,7 +75,7 @@
   unit-type: [Battle Wizard],
   profile: (4, 3, 3, 3, 3, 2, 3, 1, 7),
   equipment: (
-    magic-item([Rostbringer], kind: [Halberd])[
+    magic-item([Rustbringer], kind: [Halberd])[
       Wizard only. The wielder gains +1 Strength, +1 Toughness and +1
       Attack. In addition, if the wielder successfully hits an enemy unit in
       close combat, that unit suffers -1 to its armour saves for the rest of
