@@ -88,18 +88,16 @@
   ]
 ]
 
-#deployment(draft: true)[
-  Follow the standard rules for deployment. Each side deploys within 12" of
-  its own long table edge.
+#deployment[
+  Follow the standard rules for deployment.
 ]
 
-#first-turn(draft: true)[
+#first-turn[
   Follow the standard rules for first turn.
 ]
 
-#game-length(draft: true)[
-  The battle lasts six turns. The state of each forge mechanism at the end
-  of turn 6 decides what the Chaos Dwarfs carry out of the forge.
+#game-length[
+  The battle lasts six turns.
 ]
 
 #special-rules(draft: true)[
