@@ -243,14 +243,6 @@
     Round~4.
   ]
 
-  #special-rule[What the Rot Keeps][
-    Any mechanism that ends the battle *Consecrated* is lost to the forge for
-    the rest of the campaign: its boon cannot be earned later, and the slaves
-    chained to it are left to the Plaguefather. The Warriors of Chaos gain
-    nothing from the campaign for holding it. Denying Hashut is reward
-    enough.
-  ]
-
   #to-be-decided[
     Round 4 of the campaign is the Lord upgrade round. Decide whether the
     boons above are the right size, whether the 50-point bonus for a full

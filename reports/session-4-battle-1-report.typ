@@ -56,9 +56,8 @@
 
 #consequences[
   _What this means for the campaign: standings, which boons the Chaos Dwarfs
-  carried out of the forge, which mechanisms the rot keeps for good, and the
-  hook into the next battle. The session log in the Campaign Reference
-  summarises this section._
+  carried out of the forge, and the hook into the next battle. The session
+  log in the Campaign Reference summarises this section._
 ]
 
 #notes-from-the-table[
