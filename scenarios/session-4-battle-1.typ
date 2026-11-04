@@ -122,10 +122,7 @@
 
     Every result other than Still is either *poison* or *fire*. Its hits are
     distributed as shooting and armour saves apply as normal; fire hits have
-    the Flaming Attacks special rule. A Dormant mechanism lashes out both
-    ways: the lower the roll the worse the poison, the higher the roll the
-    worse the fire. A claimed mechanism breathes only its own god's fury,
-    and the higher the roll the worse it gets.
+    the Flaming Attacks special rule. 
 
     #table(
       columns: (auto, 1fr),
