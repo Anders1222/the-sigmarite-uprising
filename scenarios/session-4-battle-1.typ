@@ -36,13 +36,16 @@
   that may take a Mark of Chaos takes the Mark of Nurgle, and the army may
   not include anything marked for another god.
 
+  The Warriors of Chaos may also choose one magic item worth up to 30
+  points for free. It does not count towards their 1,500 points.
+
   Otherwise, campaign list rules apply:
   - No Lords
   - Up to 15% rare
   - Hero budget: 350 points, excluding magic items
 ]
 
-#battlefield(draft: true)[
+#battlefield[
   The table is 6 by 4 feet, 72" by 48". The Chaos Dwarfs have one long edge,
   the Warriors of Chaos the other.
 
@@ -76,10 +79,6 @@
   The terrain on the map is a proposal, mirrored through the centre of the
   table so that neither side is favoured. The pieces are whatever the
   collection holds.
-
-  #to-be-decided[
-    Agree the terrain at the table.
-  ]
 ]
 
 #deployment[
