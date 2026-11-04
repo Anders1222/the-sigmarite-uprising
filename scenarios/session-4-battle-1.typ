@@ -184,7 +184,7 @@
   ]
 ]
 
-#aftermath(draft: true)[
+#aftermath[
   #special-rule[The Fires Relit][
     Only a mechanism that is *Rekindled* at the end of turn 6 counts. A
     Dormant mechanism is still too fouled to work, and a Consecrated one
@@ -192,26 +192,16 @@
 
     Each mechanism the Chaos Dwarfs rekindle grants its own boon:
 
-    - *The Great Furnace.* The furnace is hot enough to temper daemon-iron
-      again. One Chaos Dwarf hero may be given a piece of *forge-wrought
-      armour*: any magic armour from the Chaos Dwarf list worth up to 25
-      points, at no cost.
-    - *The Bellows Engine.* The engine drives the forge's workshops once more.
-      In the next battle the Chaos Dwarfs fight, one war machine of their
-      choice may re-roll its first Misfire.
+    - *The Great Furnace.* The heart of the forge burns for Hashut once
+      more, and the glory of relighting it raises up the commander who took
+      it back. The Chaos Dwarfs may upgrade one hero-level character to its
+      *Lord equivalent*.
+    - *The Bellows Engine.* The bellows breathe clean fire into the forge,
+      hot enough to temper daemon-iron again. One Chaos Dwarf hero may be
+      given a piece of *forge-wrought armour*: any magic armour from the
+      Chaos Dwarf list worth up to 25 points, at no cost.
     - *The Casting Crucible.* The crucible pours clean once more. One Chaos
       Dwarf hero may be given a *forge-wrought weapon*: any magic weapon from
       the Chaos Dwarf list worth up to 25 points, at no cost.
-
-    If all three mechanisms are Rekindled, the forge is wholly reclaimed and
-    the Chaos Dwarfs also gain *50 points* towards the Lord upgrade of
-    Round~4.
-  ]
-
-  #to-be-decided[
-    Round 4 of the campaign is the Lord upgrade round. Decide whether the
-    boons above are the right size, whether the 50-point bonus for a full
-    reclaim should stand, and whether the rebels of the Empire feel any of
-    this: a reclaimed forge means Sigmarite slaves back under the whip.
   ]
 ]
