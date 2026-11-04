@@ -73,7 +73,7 @@
   The battle lasts six turns.
 ]
 
-#special-rules(draft: true)[
+#special-rules[
   #special-rule[Fire and Rot][
     Each forge mechanism has a claim track with three steps:
 
@@ -173,13 +173,6 @@
 
     A claimed mechanism is therefore safe for the army that claimed it, and
     a danger only to its enemies.
-  ]
-
-  #to-be-decided[
-    Still open before play: whether an action needs the 4+ roll or succeeds
-    automatically; whether a contested mechanism should be settled by Unit
-    Strength instead of blocking both sides; the strength of the hazard
-    results; and whether 6" is the right reach for the hazards.
   ]
 ]
 
