@@ -5,7 +5,7 @@
   round: [Session 4 · Battle Report],
   sides: (
     ([Chaos Dwarfs],),
-    ([Warriors of Chaos], [The Plaguefather's Chosen]),
+    ([Warriors of Chaos],),
   ),
   status: [Not yet fought],
   cover: false,

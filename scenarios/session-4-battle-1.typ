@@ -5,28 +5,8 @@
   round: [Session 4 · Battle One],
   sides: (
     ([Chaos Dwarfs],),
-    ([Warriors of Chaos], [The Plaguefather's Chosen]),
+    ([Warriors of Chaos],),
   ),
-  intro: [
-    Far out in the Dark Lands, where the ash plains meet the black spurs of
-    the Mountains of Mourn, the Dawi-Zharr keep a daemon-forge that has not
-    gone cold in a thousand years. Its garrison was stripped to the bone when
-    the slaves rose: every warrior who could hold an axe was sent to hunt
-    Sigmarites. The forge was left to its overseers, its chained workforce,
-    and the hunger of its furnaces.
-
-    Something found it in the dark. The iron rusted overnight. The furnaces
-    took on a sickly green glow and the bellows began to breathe out spores
-    instead of smoke. The slaves sickened first, then the overseers, and the
-    last message carried out of the forge spoke of a host marching under
-    rotting banners to claim the place as holy ground for the Plaguefather.
-
-    Hashut does not share. A column of Chaos Dwarfs has turned back from the
-    hunt to purge the infestation and relight the fires of the forge. The
-    followers of Nurgle mean to finish what the rot began. Between them stand
-    three great mechanisms, and whichever god they burn for at nightfall will
-    own the forge.
-  ],
 )
 
 #armies[
