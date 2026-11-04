@@ -32,7 +32,6 @@
 #let furnace = rgb("#c9602b")
 #let bellows = rgb("#8d8c8a")
 #let crucible = rgb("#7fa04a")
-#let glow = rgb("#9bc25a")
 
 #set page(width: 22cm, height: 17.6cm, margin: 0pt, fill: parchment)
 #set text(font: "Libertinus Serif", fill: ink, size: 8.5pt)
@@ -131,15 +130,12 @@
     stroke: (paint: rock, thickness: 1.4pt, cap: "round")))
 }
 
-// A forge mechanism: a 6" piece on the centre line, with the Plague-Rust
-// ring 3" out from its base and the Unstable Machinery reach 6" out.
+// A forge mechanism: a 6" piece on the centre line, with the Unstable
+// Machinery reach 6" out from its base.
 #let mechanism(cx, cy, fill, body) = {
   place(dx: px(cx) - 9 * u, dy: py(cy) - 9 * u,
     circle(radius: 9 * u, fill: none,
       stroke: (paint: ember, thickness: 0.7pt, dash: (array: (3pt, 2.5pt)))))
-  place(dx: px(cx) - 6 * u, dy: py(cy) - 6 * u,
-    circle(radius: 6 * u, fill: glow.transparentize(80%),
-      stroke: (paint: runoff-dark, thickness: 0.7pt, dash: "dotted")))
   place(dx: px(cx) - 3 * u, dy: py(cy) - 3 * u,
     polygon.regular(size: 6 * u, vertices: 8, fill: iron, stroke: 1pt + gold))
   place(dx: px(cx) - 1.6 * u, dy: py(cy) - 1.6 * u,
@@ -232,11 +228,6 @@
     #swatch(align(horizon, polygon.regular(size: 8pt, vertices: 8, fill: iron,
       stroke: 0.7pt + gold)))
     #h(3pt) Forge mechanism, 6″ across, impassable.
-  ],
-  [
-    #swatch(align(horizon, circle(radius: 4pt, fill: glow.transparentize(80%),
-      stroke: (paint: runoff-dark, thickness: 0.7pt, dash: "dotted"))))
-    #h(3pt) Plague-Rust: difficult terrain 3″ out (optional).
   ],
   [
     #swatch(align(horizon, circle(radius: 4pt, fill: none,

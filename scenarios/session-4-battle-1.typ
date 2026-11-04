@@ -77,14 +77,8 @@
   table so that neither side is favoured. The pieces are whatever the
   collection holds.
 
-  #special-rule[Plague-Rust (optional)][
-    The ground within 3" of each forge mechanism is slick with rust and
-    corroded runoff. It counts as difficult terrain.
-  ]
-
   #to-be-decided[
-    Agree the terrain at the table. Decide whether Plague-Rust is used; drop
-    it if the centre of the table becomes a slog.
+    Agree the terrain at the table.
   ]
 ]
 
