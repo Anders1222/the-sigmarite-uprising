@@ -115,6 +115,13 @@
     A unit that has worked a mechanism may still shoot and fight as normal.
   ]
 
+  #special-rule[Masters of the Forge][
+    These are Chaos Dwarf machines, and a Daemonsmith needs no gang of
+    slaves to work them. A Daemonsmith ignores the Unit Strength
+    requirement of Working the Machinery, whether alone or with a unit they
+    have joined.
+  ]
+
   #special-rule[Unstable Machinery][
     At the start of each game turn, roll a D6 for every mechanism and look up
     the result on the table for its step on the claim track. "Nearby" means
