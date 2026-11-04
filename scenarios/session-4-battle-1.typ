@@ -1,0 +1,207 @@
+#import "template.typ": *
+
+#show: scenario.with(
+  title: [The Rotting Forge],
+  round: [Session 4 · Battle One],
+  sides: (
+    ([Chaos Dwarfs],),
+    ([Warriors of Chaos],),
+  ),
+  art: "art/session-4-battle-1.png",
+)
+
+#armies[
+  *1,500 points* per side: Chaos Dwarfs against Warriors of Chaos.
+
+  The Warriors of Chaos army is dedicated to Nurgle. Every character and unit
+  that may take a Mark of Chaos takes the Mark of Nurgle, and the army may
+  not include anything marked for another god.
+
+  The Warriors of Chaos may also choose one magic item worth up to 30
+  points for free. It does not count towards their 1,500 points.
+
+  Otherwise, campaign list rules apply:
+  - No Lords
+  - Up to 15% rare
+  - Hero budget: 350 points, excluding magic items
+]
+
+#battlefield[
+  The table is 6 by 4 feet, 72" by 48". The Chaos Dwarfs have one long edge,
+  the Warriors of Chaos the other.
+
+  The battlefield is a ruined industrial forge: slag heaps, broken machinery,
+  chimneys, pipework, rusted workshops and pools of contaminated runoff. Slag
+  heaps count as hills, workshops as buildings, pipework and broken machinery
+  as impassable terrain or obstacles as the group sees fit, and runoff pools
+  as marshland.
+
+  Three forge mechanisms stand along the centre line of the table, 24" from
+  either long edge. Each is a terrain piece roughly 6" across and counts as
+  impassable terrain:
+
+  - *The Great Furnace* at the centre of the table, burning with unnatural
+    green flames.
+  - *The Bellows Engine* 16" from the furnace towards one short edge, still
+    pumping toxic spores.
+  - *The Casting Crucible* 16" from the furnace towards the other short edge,
+    a basin of molten daemon-iron bubbling with corruption.
+
+  All three mechanisms are of equal value and use identical rules.
+
+  #block(
+    width: 100%,
+    stroke: 1pt + gold,
+    inset: 3pt,
+    fill: parchment-dark,
+    image("art/session-4-battle-1-map.png", width: 100%),
+  )
+
+  The terrain on the map is a proposal, mirrored through the centre of the
+  table so that neither side is favoured. The pieces are whatever the
+  collection holds.
+]
+
+#deployment[
+  Follow the standard rules for deployment.
+]
+
+#first-turn[
+  Follow the standard rules for first turn.
+]
+
+#game-length[
+  The battle lasts six turns.
+]
+
+#special-rules[
+  #special-rule[Fire and Rot][
+    Each forge mechanism has a claim track with three steps:
+
+    #table(
+      columns: 3,
+      align: center,
+      table.header[Consecrated][Dormant][Rekindled],
+      [Claimed by Nurgle], [Neutral], [Claimed by Hashut],
+    )
+
+    Every mechanism begins the battle *Dormant*. Mark the track with a dice
+    or a token beside the terrain piece.
+
+    Chaos Dwarf units perform *Cleanse and Restart* actions, which move the
+    track one step towards Rekindled. Warriors of Chaos units perform
+    *Corrupt and Consecrate* actions, which move it one step towards
+    Consecrated. One successful action claims a Dormant mechanism.
+
+    A claimed mechanism can still be lost. The enemy can perform actions on
+    it as normal: one success returns it to Dormant, and a second claims it
+    for their own side. A mechanism may change hands as often as the battle
+    allows.
+  ]
+
+  #special-rule[Working the Machinery][
+    A unit may attempt one action in the Remaining Moves sub-phase of its own
+    side's turn if all of the following are true:
+
+    - It is within 1" of the mechanism's base.
+    - No enemy unit is within 1" of the same mechanism. A contested
+      mechanism cannot be worked by either side.
+    - It has a Unit Strength of 5 or more and is not fleeing.
+    - It did not march or charge this turn.
+
+    Roll a D6. On a 4+ the action succeeds and the track moves one step.
+    Add +1 to the roll if the unit includes a character. Only one action may
+    be attempted on each mechanism per player turn.
+
+    A unit that has worked a mechanism may still shoot and fight as normal.
+  ]
+
+  #special-rule[Masters of the Forge][
+    These are Chaos Dwarf machines, and a Daemonsmith needs no gang of
+    slaves to work them. A Daemonsmith ignores the Unit Strength
+    requirement of Working the Machinery, whether alone or with a unit they
+    have joined.
+  ]
+
+  #special-rule[Unstable Machinery][
+    At the start of each game turn, roll a D6 for every mechanism and look up
+    the result on the table for its step on the claim track. "Nearby" means
+    within 6" of the mechanism's base.
+
+    Every result other than Still is either *poison* or *fire*. Its hits are
+    distributed as shooting and armour saves apply as normal; fire hits have
+    the Flaming Attacks special rule. 
+
+    #table(
+      columns: (auto, 1fr),
+      align: (center, left),
+      table.header[D6][Consecrated],
+      [1-2], [*Still.* Nothing happens.],
+      [3-4], [*Toxic Fumes* (poison). Every nearby unit suffers D6 Strength 3
+        hits.],
+      [5], [*Spore Cloud* (poison). Every nearby unit suffers D6 Strength 4
+        hits.],
+      [6], [*Plague Bloom* (poison). Every nearby unit suffers 2D6 Strength 4
+        hits.],
+    )
+
+    #table(
+      columns: (auto, 1fr),
+      align: (center, left),
+      table.header[D6][Dormant],
+      [1], [*Spore Cloud* (poison). Every nearby unit suffers D6 Strength 4
+        hits.],
+      [2], [*Toxic Fumes* (poison). Every nearby unit suffers D6 Strength 3
+        hits.],
+      [3-4], [*Still.* Nothing happens.],
+      [5], [*Cinders* (fire). Every nearby unit suffers D6 Strength 3 hits.],
+      [6], [*Furnace Flare* (fire). Every nearby unit suffers D6 Strength 4
+        hits.],
+    )
+
+    #table(
+      columns: (auto, 1fr),
+      align: (center, left),
+      table.header[D6][Rekindled],
+      [1-2], [*Still.* Nothing happens.],
+      [3-4], [*Cinders* (fire). Every nearby unit suffers D6 Strength 3 hits.],
+      [5], [*Furnace Flare* (fire). Every nearby unit suffers D6 Strength 4
+        hits.],
+      [6], [*Hashut's Breath* (fire). Every nearby unit suffers 2D6 Strength 4
+        hits.],
+    )
+  ]
+
+  #special-rule[Hashut's Fire & Nurgle's Rot][
+    The forge-born are no strangers to flame, and the Plaguefather's chosen
+    breathe spores as other men breathe air.
+
+    - Chaos Dwarf units ignore every *fire* result.
+    - Units with the Mark of Nurgle ignore every *poison* result.
+
+    A claimed mechanism is therefore safe for the army that claimed it, and
+    a danger only to its enemies.
+  ]
+]
+
+#aftermath[
+  #special-rule[The Fires Relit][
+    Only a mechanism that is *Rekindled* at the end of turn 6 counts. A
+    Dormant mechanism is still too fouled to work, and a Consecrated one
+    belongs to the rot.
+
+    Each mechanism the Chaos Dwarfs rekindle grants its own boon:
+
+    - *The Great Furnace.* The heart of the forge burns for Hashut once
+      more, and the glory of relighting it raises up the commander who took
+      it back. The Chaos Dwarfs may upgrade one hero-level character to its
+      *Lord equivalent*.
+    - *The Bellows Engine.* The bellows breathe clean fire into the forge,
+      hot enough to temper daemon-iron again. One Chaos Dwarf hero may be
+      given a piece of *forge-wrought armour*: any magic armour from the
+      Chaos Dwarf list worth up to 25 points, at no cost.
+    - *The Casting Crucible.* The crucible pours clean once more. One Chaos
+      Dwarf hero may be given a *forge-wrought weapon*: any magic weapon from
+      the Chaos Dwarf list worth up to 25 points, at no cost.
+  ]
+]
