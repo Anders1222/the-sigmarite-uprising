@@ -102,8 +102,8 @@
     A unit may attempt one action in the Remaining Moves sub-phase of its own
     side's turn if all of the following are true:
 
-    - It is in contact with the mechanism's base.
-    - No enemy unit is in contact with the same mechanism. A contested
+    - It is within 1" of the mechanism's base.
+    - No enemy unit is within 1" of the same mechanism. A contested
       mechanism cannot be worked by either side.
     - It has a Unit Strength of 5 or more and is not fleeing.
     - It did not march or charge this turn.
