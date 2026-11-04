@@ -7,6 +7,7 @@
     ([Chaos Dwarfs],),
     ([Warriors of Chaos],),
   ),
+  art: "art/session-4-battle-1.png",
 )
 
 #armies[
