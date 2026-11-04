@@ -227,7 +227,7 @@
   [
     #swatch(align(horizon, polygon.regular(size: 8pt, vertices: 8, fill: iron,
       stroke: 0.7pt + gold)))
-    #h(3pt) Forge mechanism, 6″ across, impassable.
+    #h(3pt) Forge mechanism~(5), 6″ across, impassable.
   ],
   [
     #swatch(align(horizon, circle(radius: 4pt, fill: none,
@@ -237,12 +237,12 @@
   [
     #swatch(align(horizon, ellipse(width: 100%, height: 100%, fill: slag,
       stroke: 0.7pt + rock-dark)))
-    #h(3pt) Slag heap: a hill.
+    #h(3pt) Slag heap~(2): a hill.
   ],
   [
     #swatch(rect(width: 100%, height: 100%, fill: workshop,
       stroke: 0.7pt + workshop-dark))
-    #h(3pt) Rusted workshop: a building.
+    #h(3pt) Rusted workshop~(5): a building.
   ],
   [
     #swatch(rect(width: 100%, height: 100%, fill: runoff,
@@ -252,6 +252,10 @@
   [
     #swatch(rect(width: 100%, height: 100%, fill: rock,
       stroke: 0.7pt + rock-dark))
-    #h(3pt) Machinery and chimneys: impassable. Pipes: obstacles.
+    #h(3pt) Machinery and chimneys: impassable. Pipes~(3): obstacles.
+  ],
+  [
+    #swatch(align(center + bottom, text(size: 7.5pt)[(n)]))
+    #h(3pt) Line of sight value.
   ],
 )))
