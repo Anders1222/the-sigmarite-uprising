@@ -74,12 +74,6 @@
 ]
 
 #special-rules(draft: true)[
-  As in every battle the Dawi-Zharr fight against outsiders, the Chaos Dwarfs
-  are the only side with something to win. Each forge mechanism they have
-  reclaimed when the battle ends earns them a boon in the Aftermath.
-  The Warriors of Chaos play to deny them: every mechanism they corrupt, or
-  simply keep contested, is one the forge does not give back.
-
   #special-rule[Fire and Rot][
     Each forge mechanism has a claim track with three steps:
 
