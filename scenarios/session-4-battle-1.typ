@@ -125,30 +125,19 @@
 
   #special-rule[Unstable Machinery][
     At the start of each game turn, roll a D6 for every mechanism and look up
-    the result on the table for its step on the claim track. "Nearby" means
-    within 6" of the mechanism's base.
+    the result on the Forge Tremors table. If the mechanism is claimed, the
+    side that claimed it may add 1 to the roll or subtract 1 from it, after
+    seeing the roll. A modified result of 0 counts as 1, and a 7 counts
+    as 6. "Nearby" means within 6" of the mechanism's base.
 
     Every result other than Still is either *poison* or *fire*. Its hits are
     distributed as shooting and armour saves apply as normal; fire hits have
-    the Flaming Attacks special rule. 
+    the Flaming Attacks special rule.
 
     #table(
       columns: (auto, 1fr),
       align: (center, left),
-      table.header[D6][Consecrated],
-      [1-2], [*Still.* Nothing happens.],
-      [3-4], [*Toxic Fumes* (poison). Every nearby unit suffers D6 Strength 3
-        hits.],
-      [5], [*Spore Cloud* (poison). Every nearby unit suffers D6 Strength 4
-        hits.],
-      [6], [*Plague Bloom* (poison). Every nearby unit suffers 2D6 Strength 4
-        hits.],
-    )
-
-    #table(
-      columns: (auto, 1fr),
-      align: (center, left),
-      table.header[D6][Dormant],
+      table.header[D6][Forge Tremors],
       [1], [*Spore Cloud* (poison). Every nearby unit suffers D6 Strength 4
         hits.],
       [2], [*Toxic Fumes* (poison). Every nearby unit suffers D6 Strength 3
@@ -156,18 +145,6 @@
       [3-4], [*Still.* Nothing happens.],
       [5], [*Cinders* (fire). Every nearby unit suffers D6 Strength 3 hits.],
       [6], [*Furnace Flare* (fire). Every nearby unit suffers D6 Strength 4
-        hits.],
-    )
-
-    #table(
-      columns: (auto, 1fr),
-      align: (center, left),
-      table.header[D6][Rekindled],
-      [1-2], [*Still.* Nothing happens.],
-      [3-4], [*Cinders* (fire). Every nearby unit suffers D6 Strength 3 hits.],
-      [5], [*Furnace Flare* (fire). Every nearby unit suffers D6 Strength 4
-        hits.],
-      [6], [*Hashut's Breath* (fire). Every nearby unit suffers 2D6 Strength 4
         hits.],
     )
   ]
@@ -179,8 +156,8 @@
     - Chaos Dwarf units ignore every *fire* result.
     - Units with the Mark of Nurgle ignore every *poison* result.
 
-    A claimed mechanism is therefore safe for the army that claimed it, and
-    a danger only to its enemies.
+    Claiming a mechanism lets an army steer it towards the element it
+    ignores, but the machinery is never wholly safe.
   ]
 ]
 
