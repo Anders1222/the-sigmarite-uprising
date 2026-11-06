@@ -130,7 +130,7 @@
     seeing the roll. A modified result of 0 counts as 1, and a 7 counts
     as 6. "Nearby" means within 6" of the mechanism's base.
 
-    Every result other than Still is either *poison* or *fire*. Its hits are
+    Every result other than Still is either *corruption* or *fire*. Its hits are
     distributed as shooting and armour saves apply as normal; fire hits have
     the Flaming Attacks special rule.
 
@@ -138,9 +138,9 @@
       columns: (auto, 1fr),
       align: (center, left),
       table.header[D6][Forge Tremors],
-      [1], [*Spore Cloud* (poison). Every nearby unit suffers D6 Strength 4
+      [1], [*Spore Cloud* (corruption). Every nearby unit suffers D6 Strength 4
         hits.],
-      [2], [*Toxic Fumes* (poison). Every nearby unit suffers D6 Strength 3
+      [2], [*Toxic Fumes* (corruption). Every nearby unit suffers D6 Strength 3
         hits.],
       [3-4], [*Still.* Nothing happens.],
       [5], [*Cinders* (fire). Every nearby unit suffers D6 Strength 3 hits.],
@@ -154,7 +154,7 @@
     breathe spores as other men breathe air.
 
     - Chaos Dwarf units ignore every *fire* result.
-    - Units with the Mark of Nurgle ignore every *poison* result.
+    - Units with the Mark of Nurgle ignore every *corruption* result.
 
     Claiming a mechanism lets an army steer it towards the element it
     ignores, but the machinery is never wholly safe.
