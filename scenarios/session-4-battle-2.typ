@@ -7,6 +7,7 @@
     ([The Empire],),
     ([Lizardmen],),
   ),
+  art: "art/session-4-battle-2.png",
   intro: [
     The Hashut-worshippers treat their land with little care, and everywhere
     the earth is cracked, carved and dug through. Monstrosities from within
