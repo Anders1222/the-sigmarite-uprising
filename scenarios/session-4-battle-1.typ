@@ -8,6 +8,30 @@
     ([Warriors of Chaos],),
   ),
   art: "art/session-4-battle-1.png",
+  intro: [
+    #text(weight: 700, style: "normal", fill: iron)[From the journal of Zhaitrak the Meat Merchant:]
+
+    The Dawi brought Iron Drakes. They hauled their fire-throwers all the
+    way to the Ogre camp, poured dragon-fire over warriors of mine whom fire
+    cannot touch, and seemed honestly offended when nothing burned.
+
+    Less amusing is the news from the old daemon-forge at the edge of the
+    ash plains. Its garrison was sent out to hunt the runaway slaves, and in
+    their absence something crawled inside. The iron rusts overnight. The
+    Great Furnace burns green, the bellows cough spores, and the crucible
+    has curdled like old milk.
+
+    The culprits have not even had the courtesy to hide. A host of the
+    Plaguefather's warriors squats among the slag heaps, singing to the
+    flies, and calls the forge holy ground. Their envoy brought me an offer
+    for it. It was mostly flies.
+
+    Hashut does not share, and neither do I. A working forge is worth more
+    than any ten slave pens, and whoever relights the Great Furnace will be
+    remembered on the ziggurat long after a lost herd is forgotten. I have
+    already had the deeds drawn up in my own name. I need only scrub the
+    place clean and light the fires.
+  ],
 )
 
 #armies[
